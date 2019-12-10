@@ -43,4 +43,5 @@ desc "Push a new beta build to TestFlight"
 lane :deploy do
 	assemble_build
 	upload_to_testflight
+	slack(message: "Spokestack RSS Reader successfully released!")
 end
