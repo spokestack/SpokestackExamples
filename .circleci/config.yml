@@ -4,7 +4,7 @@ version: 2
 
 references:
   gems_cache_key: &gems_cache_key
-    bundle-v1-{{ checksum "SpokestackRSSReader/Gemfile.lock" }}-{{ arch }}
+    bundle-v2-{{ checksum "SpokestackRSSReader/Gemfile.lock" }}-{{ arch }}
 
   restore_gems_cache: &restore_gems_cache
     restore_cache:
@@ -14,7 +14,7 @@ references:
     save_cache:
       key: *gems_cache_key
       paths:
-        - vendor/bundle
+        - bundle
 
 jobs:
   build:
