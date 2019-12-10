@@ -14,7 +14,7 @@ references:
     save_cache:
       key: *gems_cache_key
       paths:
-        - bundle
+        - SpokestackRSSReader/bundle
 
 jobs:
   build:
