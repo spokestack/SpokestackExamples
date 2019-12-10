@@ -31,6 +31,14 @@ lane :assemble_build do
   )
 end
 
+desc "Increment the build number and version"
+lane :increment do
+	increment_build_number
+	increment_version_number(
+		bump_type: "patch"
+	)
+end
+
 desc "Push a new beta build to TestFlight"
 lane :deploy do
 	assemble_build
