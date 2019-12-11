@@ -163,7 +163,7 @@ class RSSViewModel: ObservableObject {
                         return
                     }
                     
-                    if !strongSelf.item.isCancelled {
+                    if !strongSelf.workerItem.isCancelled {
                         print("Not cancelled so start")
                         strongSelf.speechController.activatePipelineASR()
                     } else {
@@ -171,7 +171,7 @@ class RSSViewModel: ObservableObject {
                         strongSelf.speechController.stop()
                     }
                     
-                    self?.item = nil
+                    self?.workerItem = nil
                 }
                 
                 workItemQueue.async(execute: self.workerItem)
