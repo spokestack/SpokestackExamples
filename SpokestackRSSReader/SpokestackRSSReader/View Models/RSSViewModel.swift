@@ -46,7 +46,7 @@ class RSSViewModel: ObservableObject {
     /// `DispatchWorkItem` instance that is used to read the current item's desc.
     /// It will be cancelled and the next headline will be read if the time exceeds
     /// `App.actionDelay`
-    private var item: DispatchWorkItem!
+    private var workerItem: DispatchWorkItem!
     
     /// Whether or not the entire feed has finished processing. When `true` the `App.finishedMessage`
     /// is synthesized
@@ -157,7 +157,7 @@ class RSSViewModel: ObservableObject {
                 
             } else if !self.queuedItems.isEmpty {
 
-                self.item = DispatchWorkItem { [weak self] in
+                self.workerItem = DispatchWorkItem { [weak self] in
                     
                     guard let strongSelf = self else {
                         return
@@ -174,11 +174,11 @@ class RSSViewModel: ObservableObject {
                     self?.item = nil
                 }
                 
-                workItemQueue.async(execute: self.item)
+                workItemQueue.async(execute: self.workerItem)
                 workItemQueue.asyncAfter(deadline: .now() + App.actionDelay) {[weak self] in
                     
                     DispatchQueue.main.async {
-                        self?.item?.cancel()
+                        self?.workerItem?.cancel()
                         self?.processNextItem()
                     }
                 }
