@@ -28,6 +28,12 @@ final class SpeechController: NSObject {
     /// deallocation
     private var subscriptions = Set<AnyCancellable>()
     
+    /// `AVSpeechSynthesizer` instance for handling speech to text
+    /// After a headlie is read the ASR is activated and processed by the
+    /// synthesizer. If speech contains `App.actionPhrase` then the
+    /// description for the current item is "read"
+    private let avSpeechSynthesizer: AVSpeechSynthesizer = AVSpeechSynthesizer()
+    
     /// `AVPlayer` instance that will handle playback for the mp3
     private var player: AVPlayer = AVPlayer()
     
@@ -70,15 +76,19 @@ final class SpeechController: NSObject {
     
     // MARK: Initializers
     
-    /// Sets pipeline delegate to nil
+    /// Sets pipeline and avSpeechSynthesizer  delegate to nil
     deinit {
+        
         pipeline.speechDelegate = nil
+        avSpeechSynthesizer.delegate = nil
     }
     
     /// Initializes `tts` by setting this class as it's delegate and default `SpeechConfiguration`
     override init() {
         
         super.init()
+        
+        avSpeechSynthesizer.delegate = self
         tts = TextToSpeech(self, configuration: SpeechConfiguration())
     }
     
@@ -174,6 +184,33 @@ final class SpeechController: NSObject {
                 }
             )
             .store(in: &self.subscriptions)
+    }
+}
+
+extension SpeechController: AVSpeechSynthesizerDelegate {
+    
+    func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didStart utterance: AVSpeechUtterance) {
+        print("sp did start \(utterance)")
+    }
+    
+    func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
+        print("sp did finish \(utterance)")
+    }
+    
+    func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didPause utterance: AVSpeechUtterance) {
+        print("sp did pause \(utterance)")
+    }
+    
+    func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didContinue utterance: AVSpeechUtterance) {
+        print("sp did continue \(utterance)")
+    }
+    
+    func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didCancel utterance: AVSpeechUtterance) {
+        print("sp did cancel \(utterance)")
+    }
+    
+    func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, willSpeakRangeOfSpeechString characterRange: NSRange, utterance: AVSpeechUtterance) {
+        print("sp willSpeakRangeOfSpeechString \(utterance)")
     }
 }
 

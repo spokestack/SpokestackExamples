@@ -16,7 +16,7 @@ struct App {
     
     /// Time delay (in seconds) between reading each headline
     
-    static let actionDelay: TimeInterval = 1.5
+    static let actionDelay: TimeInterval = 6.5
     
     /// Button text on each item card
     

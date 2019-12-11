@@ -11,6 +11,8 @@ import Combine
 import AVFoundation
 import UIKit
 
+private let workItemQueue: DispatchQueue = DispatchQueue(label: "com.spokestack.workitem.queue")
+
 /// Transform RSSFeedItem  information into values that can be displayed on a view.
 /// To aid in state management it is an `ObserverableObject`
 class RSSViewModel: ObservableObject {
@@ -40,6 +42,11 @@ class RSSViewModel: ObservableObject {
     
     /// Holds instances of `AnyCancellable` which will be cancled on deallocation
     private var subscriptions = Set<AnyCancellable>()
+    
+    /// `DispatchWorkItem` instance that is used to read the current item's desc.
+    /// It will be cancelled and the next headline will be read if the time exceeds
+    /// `App.actionDelay`
+    private var item: DispatchWorkItem!
     
     /// Whether or not the entire feed has finished processing. When `true` the `App.finishedMessage`
     /// is synthesized
@@ -149,10 +156,32 @@ class RSSViewModel: ObservableObject {
                 }
                 
             } else if !self.queuedItems.isEmpty {
+
+                self.item = DispatchWorkItem { [weak self] in
+                    
+                    guard let strongSelf = self else {
+                        return
+                    }
+                    
+                    if !strongSelf.item.isCancelled {
+                        print("Not cancelled so start")
+                        strongSelf.speechController.activatePipelineASR()
+                    } else {
+                        print("The work item is cancelled")
+                        strongSelf.speechController.stop()
+                    }
+                    
+                    self?.item = nil
+                }
                 
-                DispatchQueue.main.asyncAfter(deadline: .now() + App.actionDelay, execute: {[unowned self] in
-                  self.processNextItem()
-                })
+                workItemQueue.async(execute: self.item)
+                workItemQueue.asyncAfter(deadline: .now() + App.actionDelay) {[weak self] in
+                    
+                    DispatchQueue.main.async {
+                        self?.item?.cancel()
+                        self?.processNextItem()
+                    }
+                }
                 
             } else {
 
