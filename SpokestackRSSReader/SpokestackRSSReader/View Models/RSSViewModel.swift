@@ -125,9 +125,10 @@ class RSSViewModel: ObservableObject {
         let feedURL: URL = URL(string: App.Feed.feedURL)!
         let rssController: RSSController = RSSController(feedURL)
         
-        rssController.parseFeed({feedItems in
+        rssController.parseFeed({[unowned self] feedItems in
             
             self.feedItems = feedItems
+            /// Tell the speech controller to cache mp3's and then send publisher that it is done
             self.shouldAnnounceWelcome.toggle()
         })
     }
