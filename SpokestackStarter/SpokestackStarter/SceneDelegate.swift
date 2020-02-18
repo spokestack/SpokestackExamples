@@ -24,7 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Create the SwiftUI view that provides the window contents.
         let contentView = ContentView()
         
-        // start using spokestack!
+        /// - TODO: start using spokestack!
         spokestack.tts?.speak(TextToSpeechInput("Spokestack gives your mobile app a voice!"))
 
         // Use a UIHostingController as window root view controller.

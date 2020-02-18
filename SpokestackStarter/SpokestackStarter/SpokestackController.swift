@@ -10,22 +10,27 @@ import Foundation
 import Spokestack
 
 public class SpokestackController {
-    public var asr: SpeechPipeline?
-    public var tts: TextToSpeech?
+    /// The Spokestack speech recognition component
+    public var asr: SpeechPipeline
+    
+    /// The Spokestack text to speech component
+    public var tts: TextToSpeech
     
     public init() {
         let config = SpeechConfiguration()
+        // send debug events to `didTrace`
         config.tracing = .DEBUG
         asr = SpeechPipeline(SpeechProcessors.appleSpeech.processor, speechConfiguration: config, speechDelegate: self, wakewordService: SpeechProcessors.appleWakeword.processor, pipelineDelegate: self)
         tts = TextToSpeech(self, configuration: config)
     }
     
-    
+    /// - TODO: remove the Editor placeholder for `didTrace`. It can be as simple as `print(trace)`. This function is common amongst the asr and tts delegates.
     public func didTrace(_ trace: String) {
         <#code#>
     }
 }
 
+/// - TODO: remove the Editor placeholder for `SpeechEventListener` implementation. It can be as simple as `print("SpeechEventListener")`
 extension SpokestackController: SpeechEventListener {
     public func activate() {
         <#code#>
@@ -48,6 +53,7 @@ extension SpokestackController: SpeechEventListener {
     }
 }
 
+/// - TODO: remove the Editor placeholder for `PipelineDelegate` implementation. It can be as simple as `print("PipelineDelegate")`
 extension SpokestackController: PipelineDelegate {
     public func didInit() {
         <#code#>
@@ -66,6 +72,7 @@ extension SpokestackController: PipelineDelegate {
     }
 }
 
+/// - TODO: remove the Editor placeholder for `TextToSpeechDelegate` implementation. It can be as simple as `print("TextToSpeechDelegate")`
 extension SpokestackController: TextToSpeechDelegate {
     public func success(result: TextToSpeechResult) {
         <#code#>
