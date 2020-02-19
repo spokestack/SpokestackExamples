@@ -1,0 +1,1781 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		AC559E53E13B6FBEF4F5CC310A73AFE6 /* TensorFlowLiteC */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D4A93F0DD0F148C4232C2AB76290AC7A /* Build configuration list for PBXAggregateTarget "TensorFlowLiteC" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = TensorFlowLiteC;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		001E0D3CC9CC0D2FB6D91066DC7E0FE6 /* analog_agc.h in Headers */ = {isa = PBXBuildFile; fileRef = 65D18885F63F2F4D200929A4165B795E /* analog_agc.h */; };
+		00CBB43A2F12EB3A0CCD2FC456F9AC66 /* noise_suppression.c in Sources */ = {isa = PBXBuildFile; fileRef = DE05D1586C78027E4872B89B64A98D25 /* noise_suppression.c */; };
+		016DB6598D7FA0A79EC9A019991F4EEB /* Spokestack-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E82CD2AD0BB782CA639F96FEDF15BC7 /* Spokestack-iOS-dummy.m */; };
+		0235C1DACAA01139FA9421C5C8E7524F /* defines.h in Headers */ = {isa = PBXBuildFile; fileRef = 83932DC7FCA61844E04199F857F76375 /* defines.h */; };
+		03D190675C7D6681FF4E51467F661FE4 /* cross_correlation.c in Sources */ = {isa = PBXBuildFile; fileRef = 80D1CD399FE78B2D38DF601767B1480E /* cross_correlation.c */; };
+		03DF75CA524B168C0646F532E7A287CB /* TensorFlowLiteSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BABF8D1E2943F24DE35B117D2A690050 /* TensorFlowLiteSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04927A4F1EF98935A4A5B802E6517E37 /* aec_core_sse2.c in Sources */ = {isa = PBXBuildFile; fileRef = 5EFBFF9FE8520D1265BA72E8EA374955 /* aec_core_sse2.c */; };
+		064D7AE9DB63E7060B0F5B303BD38EAA /* noise_suppression_x.h in Headers */ = {isa = PBXBuildFile; fileRef = A6F715F7F392FAA474A5471FB660D1D7 /* noise_suppression_x.h */; };
+		07C367EF0A71F1A76C434F41DF3B0F03 /* aec_core_internal.h in Copy aec Private Headers */ = {isa = PBXBuildFile; fileRef = 80009BB58ACA9FF9C7877B71BD8DA080 /* aec_core_internal.h */; };
+		07D18F4C0B9BFFC17F2387E90B7F7C15 /* ns_core.h in Copy ns Private Headers */ = {isa = PBXBuildFile; fileRef = D0C5E38E5EB27D6D824FFF356DD710A3 /* ns_core.h */; };
+		08D99064B3F1AC2A294F630781C127FC /* windows_private.h in Headers */ = {isa = PBXBuildFile; fileRef = F5CBF929F77166C3FA5151919CC263F1 /* windows_private.h */; };
+		13ADE9444E51947752323A904B84DE81 /* ring_buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = B58A54B053B07F405C458FBFC7F2C40F /* ring_buffer.h */; };
+		157EFF1A40F4E217099D3CCFB6DF3E68 /* speex_resampler.h in Copy other Private Headers */ = {isa = PBXBuildFile; fileRef = A0C596C29ED52F30B5C4DBF6B8290322 /* speex_resampler.h */; };
+		1674C679F43142F5D813D24BA50E9C02 /* Tensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CF171F70F30ECF52B7770C130C8F06 /* Tensor.swift */; };
+		169B7258E04520BDD076D8B79514FCBA /* PipelineDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FF363836EA831F3F175632716CEC1F /* PipelineDelegate.swift */; };
+		1A6A373A1FEC1F7989B58B73D7CB2518 /* TensorFlowLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C94F23522BF84B8823C87554EC8299 /* TensorFlowLite.swift */; };
+		20A14561AF767248E1078A7ADF1C3698 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		221459967810648B417046024A0DF0AC /* SpeechProcessors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC7706205F648B38042CFAA768BED2A /* SpeechProcessors.swift */; };
+		222C05B1BDCF2F454A25C8259D30E2CD /* filter_audio.c in Sources */ = {isa = PBXBuildFile; fileRef = 12C6B24CC70D6340233B895F48BF5D12 /* filter_audio.c */; };
+		2399E01B5797C6164D49F570285BB3A7 /* aec_resampler.h in Headers */ = {isa = PBXBuildFile; fileRef = 474EA0D1870190F0C4925C83C97A6B6D /* aec_resampler.h */; };
+		25D21C6D3F9F7DBA8C1ABD6A6D29BDA5 /* vad_gmm.c in Sources */ = {isa = PBXBuildFile; fileRef = 26E914850786D467B793B9A208B4D8F0 /* vad_gmm.c */; };
+		27F5E37EC34610427A6DBD4A6FFA2577 /* complex_fft_tables.h in Copy other Private Headers */ = {isa = PBXBuildFile; fileRef = 0FD7601AED4E353B2E11206E1C985050 /* complex_fft_tables.h */; };
+		2A6FEA9FFB21885C2C0F8951220CC53E /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A4EAB269C2856636C7F437387461DC /* Results.swift */; };
+		2A96869AB97E35A60CECBF6A20413F98 /* complex_fft_tables.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FD7601AED4E353B2E11206E1C985050 /* complex_fft_tables.h */; };
+		2D3CC7657286BF26B2CE867698AFA9E4 /* TFLiteWakewordRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6CDD60E2B1A9E87F2FDA87B7F2663D /* TFLiteWakewordRecognizer.swift */; };
+		309A9AE31D5D32D8DF08B2B9F829FD0A /* TextToSpeechInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCFC94264A0C41A753CDC87ED1F844D /* TextToSpeechInput.swift */; };
+		30C58A483DA9C73601C7B193C2460E26 /* echo_cancellation_internal.h in Copy aec Private Headers */ = {isa = PBXBuildFile; fileRef = 0D370F43DB9EB00C7ACC54B7430CF3CB /* echo_cancellation_internal.h */; };
+		31A59D55E3D29A16A213FE7E8B528574 /* analog_agc.c in Sources */ = {isa = PBXBuildFile; fileRef = 22FCAF7A59E45FC00F8BDA10D2673B5D /* analog_agc.c */; };
+		3595D53C3C04CF8B746F2A81917C67C7 /* delay_estimator_wrapper.h in Copy other Private Headers */ = {isa = PBXBuildFile; fileRef = 5872B3C1A2B0C1E3906F65D613F08624 /* delay_estimator_wrapper.h */; };
+		3912C8D12618B8174BC00A9511FD0B1A /* dot_product_with_scale.c in Sources */ = {isa = PBXBuildFile; fileRef = E04B1F40D6CBA68D3BDA9400C56D46B9 /* dot_product_with_scale.c */; };
+		395153A14748C956A8B04FDB8C4C08A4 /* AudioControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CC89CD779047555203199987024BC7 /* AudioControllerDelegate.swift */; };
+		39E10988BA77E7CB8E81BFE28B5789BE /* SpeechEventListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84A40C8BEEEA3B6574C2537416FDC8E /* SpeechEventListener.swift */; };
+		3D94EE582B5FBBA96CA8AA99FFE64FB1 /* resample_by_2_internal.h in Copy other Private Headers */ = {isa = PBXBuildFile; fileRef = D7145B566D5B01EFED11DA6C6DEA4746 /* resample_by_2_internal.h */; };
+		3E1653217AECAE877990ED265EFA56E6 /* vad_gmm.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A0EB2992DF27502CAA788153761F46A /* vad_gmm.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3E3E4AA83A6500CD0AF4F3D032E36F7E /* vad_core.h in Headers */ = {isa = PBXBuildFile; fileRef = 88F6DDD45801D9C8F8EA397C0C114554 /* vad_core.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4129675EB8C3FEFDCD24C001AB717A78 /* delay_estimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ECD79FF74C31C620D8B8799B682ED12 /* delay_estimator.h */; };
+		41951F826E63C85F92521772CA45DB68 /* echo_cancellation_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D370F43DB9EB00C7ACC54B7430CF3CB /* echo_cancellation_internal.h */; };
+		436F11389FF2B9BE50924A49AA68267F /* vector_scaling_operations.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C17420D8A16EA06F9FFC776370E7F6 /* vector_scaling_operations.c */; };
+		45E898E99FF2D1D6E7E39C64FE4BFBE0 /* TextToSpeechResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFD94DC84C02F54DB95159F12886A32 /* TextToSpeechResult.swift */; };
+		49A00E29C84D50742407755DA50E16CC /* vad_filterbank.h in Headers */ = {isa = PBXBuildFile; fileRef = 36015C10B0DC272AD0C85A4457F5C6B2 /* vad_filterbank.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4B436DECDB8E719FC585A3DC8FCC1689 /* webrtc_vad.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E853A1D693812B5CCE6267B3265944E /* webrtc_vad.h */; };
+		4E35C201E5CCA94A74C4CD0194F86233 /* aec_resampler.h in Copy aec Private Headers */ = {isa = PBXBuildFile; fileRef = 474EA0D1870190F0C4925C83C97A6B6D /* aec_resampler.h */; };
+		4EBFF7162E38625CAC6ECCCDF69ACD7C /* complex_fft.c in Sources */ = {isa = PBXBuildFile; fileRef = 3773425C1F64BFAF80FE5AD87FBFFA17 /* complex_fft.c */; };
+		4ED715EFC41135D1C9724F46CBCDC479 /* splitting_filter.c in Sources */ = {isa = PBXBuildFile; fileRef = 624CE4A79C7C3D0A4366788B5DC516B6 /* splitting_filter.c */; };
+		4F04E802BF0F7D9BAEEFC7AA7A171959 /* aec_common.h in Copy aec Private Headers */ = {isa = PBXBuildFile; fileRef = 8EBB2F6F898D8C834F624C696E154275 /* aec_common.h */; };
+		502C2670ADA9BD8B02027ACE305FB918 /* echo_cancellation.h in Copy aec/include Public Headers */ = {isa = PBXBuildFile; fileRef = D8D5436AE2732497B20A2D6933525D70 /* echo_cancellation.h */; };
+		51DE365F2F9ED1530307EA34BE8EC48E /* SignalProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959FE68C34672AC0A8F741F8EAFE0B8E /* SignalProcessing.swift */; };
+		51F7FBD76A9FCDB212853DD0A02F6D54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		52D857EEB867EE69A40D81BF7A0AD772 /* digital_agc.c in Sources */ = {isa = PBXBuildFile; fileRef = 5983E2AE6C99391BD7F7BD745FBCD5EF /* digital_agc.c */; };
+		54C36A7AA710A6EDA6643C8ECB830D07 /* aec_core_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 80009BB58ACA9FF9C7877B71BD8DA080 /* aec_core_internal.h */; };
+		555FEFC7533C27BEC4546C38BD71DFCC /* stack_alloc.h in Copy other Private Headers */ = {isa = PBXBuildFile; fileRef = 74BCE66221558C5A01492CB4720D3183 /* stack_alloc.h */; };
+		567783388B7E38747CCA2C2BD8C079B3 /* SpeechContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890F483FC50F1F1DB15205E4D2EB42B8 /* SpeechContext.swift */; };
+		570E1611BB5D43BCD550521DF2C5110A /* delay_estimator_wrapper.c in Sources */ = {isa = PBXBuildFile; fileRef = E667636FFFC42CB29C8C6A9DF7CED763 /* delay_estimator_wrapper.c */; };
+		58E784F962CCECB43F6318E57B2AE024 /* Pods-SpokestackStarter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 341CA129318194458825C17A92254569 /* Pods-SpokestackStarter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59796D67A8B4FDCD47CFF80CFBD7841D /* signal_processing_library.h in Headers */ = {isa = PBXBuildFile; fileRef = 937F94AA3EC4FC6461655C188A7561E7 /* signal_processing_library.h */; };
+		5A34F4580178B622B6570EB6DA5EEA52 /* vad_core.c in Sources */ = {isa = PBXBuildFile; fileRef = 19C927826B69BDA14B3B6EBF8016FEA7 /* vad_core.c */; };
+		5AD7C0997BAC021698A6E36F3D14D174 /* ring_buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = C1B353240663FE62AE2F6AD2971D949B /* ring_buffer.c */; };
+		5C3FFA01D388F71DCC36BD4944A9F219 /* real_fft.h in Copy other Private Headers */ = {isa = PBXBuildFile; fileRef = 6AA547E47199BBBC753D3AB3D1929448 /* real_fft.h */; };
+		5C420421DD45D12D1FDC0E5F33E47C65 /* noise_suppression.h in Copy ns/include Public Headers */ = {isa = PBXBuildFile; fileRef = 10B04B756B5403539671099B1922D3B1 /* noise_suppression.h */; };
+		5D6E60E3C6260C6E426EE2DB213B53A6 /* spl_init.c in Sources */ = {isa = PBXBuildFile; fileRef = 6A9FD4B8A7388999D207F4D8E7A3797D /* spl_init.c */; };
+		5FE465EF57CC7223487F1D601F073A3C /* delay_estimator_wrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 5872B3C1A2B0C1E3906F65D613F08624 /* delay_estimator_wrapper.h */; };
+		621F0A0859164D5432B07A760F931F27 /* vad_sp.h in Headers */ = {isa = PBXBuildFile; fileRef = E7A29AC2D8E52AE5566EE0DE65028DF8 /* vad_sp.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6238D84D297FD052057D8B0DA57E7A80 /* aec_rdft.h in Headers */ = {isa = PBXBuildFile; fileRef = 84CAEDB7DA30B42140C231C40A5F32ED /* aec_rdft.h */; };
+		635A8BC68042E5D02E18DA2236816DB1 /* signal_processing_library.h in Copy other Private Headers */ = {isa = PBXBuildFile; fileRef = 937F94AA3EC4FC6461655C188A7561E7 /* signal_processing_library.h */; };
+		63C6B79F84CD8021DB1411C3C2BE9795 /* spl_sqrt_floor.c in Sources */ = {isa = PBXBuildFile; fileRef = 8F05CB5181281AD95078DCD941F73B88 /* spl_sqrt_floor.c */; };
+		67896FCBE0071FB0B45EDD88DAA59D36 /* stack_alloc.h in Headers */ = {isa = PBXBuildFile; fileRef = 74BCE66221558C5A01492CB4720D3183 /* stack_alloc.h */; };
+		6944718DEE1F17C7AE082B5D671E6C5D /* WITVad.h in Headers */ = {isa = PBXBuildFile; fileRef = E5C7E7A9B05081EFC12C530C8B02436A /* WITVad.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6D005C5B17641E29B43C29724177BF80 /* webrtc_vad.c in Sources */ = {isa = PBXBuildFile; fileRef = BFAA5DF85B99015078E9DD03FBC806E5 /* webrtc_vad.c */; };
+		6EF652752E72E73125C2F585CF6DAEFB /* TextToSpeechDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673EA874A9B8A5EE22145CF7DE404239 /* TextToSpeechDelegate.swift */; };
+		6F4A63FDB9890803CC6D033DC2A94493 /* aec_rdft.h in Copy aec Private Headers */ = {isa = PBXBuildFile; fileRef = 84CAEDB7DA30B42140C231C40A5F32ED /* aec_rdft.h */; };
+		73806BD443F9858E7CCC421F71A92993 /* resample_48khz.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A4EEB98BCFF89DFB9FFD478AD2BF7 /* resample_48khz.c */; };
+		766E509CB14822401A90344D53C014F1 /* windows_private.h in Copy ns Private Headers */ = {isa = PBXBuildFile; fileRef = F5CBF929F77166C3FA5151919CC263F1 /* windows_private.h */; };
+		789E1482744115692A831172429B8101 /* aec_rdft_sse2.c in Sources */ = {isa = PBXBuildFile; fileRef = 48EEE39274EECD342AF54833006B4989 /* aec_rdft_sse2.c */; };
+		78A3DA96B266010279F38EB8BD376FBF /* SpeechProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6678E6D31CD09CD2D605B321C7FA16 /* SpeechProcessor.swift */; };
+		79872C0CD547E84CA41D348647AC36FF /* delay_estimator.h in Copy other Private Headers */ = {isa = PBXBuildFile; fileRef = 1ECD79FF74C31C620D8B8799B682ED12 /* delay_estimator.h */; };
+		7A7AF25A62AA69537DCAC38C83780813 /* Pods-SpokestackStarter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D0899BEA033004B9A93FD7B515CDC247 /* Pods-SpokestackStarter-dummy.m */; };
+		7B5B09FB5FF38954E573E5CD3D5FDC53 /* webrtc_vad.h in Copy vad/include Public Headers */ = {isa = PBXBuildFile; fileRef = 4E853A1D693812B5CCE6267B3265944E /* webrtc_vad.h */; };
+		7D1D0E1F65C743723655AFE79FA3445A /* RingBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3717A8427977D011E81EB3FB1FEE633 /* RingBuffer.swift */; };
+		7D30C5FA8B1AA8A2F61F6544DB79B931 /* ns_core.h in Headers */ = {isa = PBXBuildFile; fileRef = D0C5E38E5EB27D6D824FFF356DD710A3 /* ns_core.h */; };
+		7E9F25792DB51A9CDF6F5368A9028273 /* aec_rdft.c in Sources */ = {isa = PBXBuildFile; fileRef = 923F1C91BC438457CC5A77CFA153A18B /* aec_rdft.c */; };
+		7EB05D3ECD9026AE2E902B07FB87A884 /* nsx_defines.h in Copy ns Private Headers */ = {isa = PBXBuildFile; fileRef = 64B4880F6BA7F08078D5BECC3A2005AC /* nsx_defines.h */; };
+		7F8D1245014D24EF6150E3069DBD5B2F /* aec_resampler.c in Sources */ = {isa = PBXBuildFile; fileRef = 490FAD6E42D7D2DB01D692382B6D2303 /* aec_resampler.c */; };
+		8181BE5FC97E17F8BB54996F8CBBF2EE /* filters.c in Sources */ = {isa = PBXBuildFile; fileRef = C627903D0D16EF001A3C5519DF354A5D /* filters.c */; };
+		82B4836846E9D986CA6EE72FCC6D6A73 /* filters.h in Headers */ = {isa = PBXBuildFile; fileRef = D48B4D485C7269C74F68B9DE9D5EF455 /* filters.h */; };
+		849EDBC804EAE3957D22DD7DB7841CC2 /* WITCvad.h in Headers */ = {isa = PBXBuildFile; fileRef = A37B061ABAF8C28CB9964C3106792D4C /* WITCvad.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		87878978BFD26450652A360648C71E88 /* speex_resampler.c in Sources */ = {isa = PBXBuildFile; fileRef = 3F208983C5E7BE51CC3FBEB6D2C14990 /* speex_resampler.c */; };
+		87F07E10CCF47A39632C8A7EF7BBD8D5 /* arch.h in Copy other Private Headers */ = {isa = PBXBuildFile; fileRef = 0DFA178DFFCC1D08D88A566B4ABD7863 /* arch.h */; };
+		882EE25391A7C3187DDA606F5AA8D7D6 /* delay_estimator.c in Sources */ = {isa = PBXBuildFile; fileRef = 9B2355B1A56900493BDCFD71B659A2D9 /* delay_estimator.c */; };
+		883E9EB2DE6E752DD99EE98E993CF995 /* gain_control.h in Headers */ = {isa = PBXBuildFile; fileRef = C4975934B26FDD68A65A8F3FC80E7EFE /* gain_control.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8B597B7B7045D9402F745120D3A01B84 /* defines.h in Copy ns Private Headers */ = {isa = PBXBuildFile; fileRef = 83932DC7FCA61844E04199F857F76375 /* defines.h */; };
+		8CA5B646502BBEC02DC625D9099AD279 /* AudioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF45E650326F960C0CC29BDD1EFD167 /* AudioController.swift */; };
+		8F4A77E3FE62933C88B5DA55750CDFCC /* arch.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DFA178DFFCC1D08D88A566B4ABD7863 /* arch.h */; };
+		9094B20A84726A9B6607AD56B833811E /* division_operations.c in Sources */ = {isa = PBXBuildFile; fileRef = 22A2ECBD37A42700D5C01D73205D6512 /* division_operations.c */; };
+		964A7A8AF5F98A4FF93B1931A912BC1D /* aec_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EBB2F6F898D8C834F624C696E154275 /* aec_common.h */; };
+		9812A1DC1643A454EE486A3E731DBB9A /* resample_sse.h in Copy other Private Headers */ = {isa = PBXBuildFile; fileRef = 0131A2EFF2BBD8931AB7A6FB10EA5E23 /* resample_sse.h */; };
+		9886CE1AE05EFC0C3707972AE8F5639B /* noise_suppression_x.h in Copy ns/include Public Headers */ = {isa = PBXBuildFile; fileRef = A6F715F7F392FAA474A5471FB660D1D7 /* noise_suppression_x.h */; };
+		9A4A0C27EC19AE40D62D9268FE210943 /* randomization_functions.c in Sources */ = {isa = PBXBuildFile; fileRef = A16E6327FBC4A51C11ADA4BF9CE2543C /* randomization_functions.c */; };
+		9AD549740D7FF4D79B92C11D2EBA0577 /* analog_agc.h in Copy agc Private Headers */ = {isa = PBXBuildFile; fileRef = 65D18885F63F2F4D200929A4165B795E /* analog_agc.h */; };
+		9FA59109CBBD04358CEF2E6136D4B0C7 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE20FF240F3DB8A1CF29B1F7475D9E1 /* Data+Extensions.swift */; };
+		A3DABA028E05CA3F662AADB43EA1F2F5 /* fft4g.h in Headers */ = {isa = PBXBuildFile; fileRef = B4069FB59CE101CB925B525A4CBDCA4C /* fft4g.h */; };
+		A6ED88B1A956223B27432E7F0F575070 /* nsx_core_c.c in Sources */ = {isa = PBXBuildFile; fileRef = 419D5C771A129C36A5192D253C3D61CA /* nsx_core_c.c */; };
+		AAAD64CB5EDF341070080A2F414D4883 /* InterpreterOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ED143ACAE7900C83A5A91FBC6A80D2 /* InterpreterOptions.swift */; };
+		AAE2BF0BC75C420726310743001C3213 /* noise_suppression.h in Headers */ = {isa = PBXBuildFile; fileRef = 10B04B756B5403539671099B1922D3B1 /* noise_suppression.h */; };
+		AAFB1570A897F6AC7C866429C4FD0D22 /* real_fft.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AA547E47199BBBC753D3AB3D1929448 /* real_fft.h */; };
+		AE2B3F1A0EAB54F67564095E7A3674A8 /* TextToSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D7CBE0AD939FE32D932509A590CD74 /* TextToSpeech.swift */; };
+		AEC2F22203D57E63D4AC0492A2F14085 /* fft4g.c in Sources */ = {isa = PBXBuildFile; fileRef = 367F8435FC694FA0F7F32ED8C38A4148 /* fft4g.c */; };
+		B3EBA533D39034E94DFC807036648913 /* WITCvad.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1442A21232868EAE3953D6492785A /* WITCvad.m */; };
+		B55F1DC386BC76FF571924D37A89282D /* nsx_core.h in Copy ns Private Headers */ = {isa = PBXBuildFile; fileRef = E99B038DD6EE622781FE0AC5B11739E9 /* nsx_core.h */; };
+		B5644A1CED9C5A4ACBA57112B824871A /* energy.c in Sources */ = {isa = PBXBuildFile; fileRef = 2588F7C4B956670EBB4CCEB3782C3DDC /* energy.c */; };
+		B5D3B0AC1FF95E5A4F78598F073CAD26 /* downsample_fast.c in Sources */ = {isa = PBXBuildFile; fileRef = 3EAF06EFC476A634DD6CC2E85D1AAAE1 /* downsample_fast.c */; };
+		B5F18609DE510794A400E7386ECF6990 /* echo_cancellation.c in Sources */ = {isa = PBXBuildFile; fileRef = 55E0E2909FAB4390E0803DC953158D12 /* echo_cancellation.c */; };
+		B6F57646D91EDAB481DB5226F7662275 /* real_fft.c in Sources */ = {isa = PBXBuildFile; fileRef = 1B86F75B998C9F76F4B7B95413C920F1 /* real_fft.c */; };
+		BA991667442FB876A7C1F28F3CD7C0FC /* spl_inl.h in Headers */ = {isa = PBXBuildFile; fileRef = B0549C250CAC5D647C7CF8BC385709BC /* spl_inl.h */; };
+		BC101846E093FD85721B41C09C7E9E20 /* ns_core.c in Sources */ = {isa = PBXBuildFile; fileRef = 43504CD668E06F781C87E9A31484675E /* ns_core.c */; };
+		BC324C81719F31071399371983F36512 /* get_scaling_square.c in Sources */ = {isa = PBXBuildFile; fileRef = E7026B5D2EBA2BCDAF8C2325EE458F4D /* get_scaling_square.c */; };
+		BD002C3D134E1E0B2B5E9B6ED9CFADF8 /* delay_estimator_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 28F297BB9D4DAFD5A01E87CC8AFDBDA1 /* delay_estimator_internal.h */; };
+		BE35F80888CF05108707FA9B17A44302 /* Spokestack.h in Headers */ = {isa = PBXBuildFile; fileRef = 021654E2DC635249854EEDDC88A74460 /* Spokestack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF0E2278055C3B0F6EAAD26277BC1F00 /* ring_buffer.h in Copy other Private Headers */ = {isa = PBXBuildFile; fileRef = B58A54B053B07F405C458FBFC7F2C40F /* ring_buffer.h */; };
+		C0B37153C83C323DA5EB1245A0172ACC /* noise_suppression_x.c in Sources */ = {isa = PBXBuildFile; fileRef = 882350AEF9F0785C06FD85DAEA86BA81 /* noise_suppression_x.c */; };
+		C2C0FDAA973AB3A78B1BBF555F0732EC /* AppleSpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B32432D7E447D9F03E87EE8BB500321 /* AppleSpeechRecognizer.swift */; };
+		C38339FD218227FE8C2676F1CC2D946F /* SpeechConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B0331BBD334030AC205523A93E49B5 /* SpeechConfiguration.swift */; };
+		C6BB61673C12D958057CDA2C59C6C0D8 /* filter_audio.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B90095118B5AB3F927B887AAB6BD016 /* filter_audio.h */; };
+		C74A0878C3F88993C4FDF7EDDA4E6C42 /* min_max_operations.c in Sources */ = {isa = PBXBuildFile; fileRef = 14F5960D1ED71149DAF0E1B3018654A9 /* min_max_operations.c */; };
+		C90C24B862B84330D187B6815D32EE82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		CA313B9D1FDCBFE8961C136D8630956B /* aec_core.h in Copy aec Private Headers */ = {isa = PBXBuildFile; fileRef = FC207185CFCC5F54641CA17B3C03DAED /* aec_core.h */; };
+		CC144AE2E9C6183963B169FE366E88F1 /* nsx_core.h in Headers */ = {isa = PBXBuildFile; fileRef = E99B038DD6EE622781FE0AC5B11739E9 /* nsx_core.h */; };
+		CC8FFE44FD4A136B1CC2B3E54D7BA677 /* speex_resampler.h in Headers */ = {isa = PBXBuildFile; fileRef = A0C596C29ED52F30B5C4DBF6B8290322 /* speex_resampler.h */; };
+		D18528671957DE012C20443ADAE3C032 /* nsx_core.c in Sources */ = {isa = PBXBuildFile; fileRef = 3E3DCEEA11B2D1D4260E12FCF9F51A77 /* nsx_core.c */; };
+		D1A34CCC7C2E74101E9FC13E1A8BC435 /* high_pass_filter.c in Sources */ = {isa = PBXBuildFile; fileRef = E680EC109ECDEEFF1FAE174BB3A81263 /* high_pass_filter.c */; };
+		D222383008D44D75DB1B5F2D87EFBB41 /* mock_vad.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D3E76830D51BCBBBAB6351D997B4E81 /* mock_vad.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D313A2C9B671F0EE89CAC3946772BDF1 /* copy_set_operations.c in Sources */ = {isa = PBXBuildFile; fileRef = 28B55F25876E1323EBD53E5F25C0AD70 /* copy_set_operations.c */; };
+		D4141E65749DF97DB6CDBB36E61F0ADA /* VADDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC0BB6583973F4F6A6D24E1F468002D /* VADDelegate.swift */; };
+		D5FD240972A665BBA91ACD1064A24440 /* TensorFlowLiteSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7940B77D9D170254577235712F9834 /* TensorFlowLiteSwift-dummy.m */; };
+		D65FBEE1C63B945ACE7800992DA07761 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50050E8F50620F04CC643709C636254 /* Typealiases.swift */; };
+		D7BDB061A6BE0F6954741112C0A48A5F /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9E76781EB5F449CB56EC5A46AFC1DB /* Error.swift */; };
+		D8EE794794F6D02029C11B38E88E2295 /* resample_by_2_internal.c in Sources */ = {isa = PBXBuildFile; fileRef = A5CFFD37C0E0932D23CB941F6AD42756 /* resample_by_2_internal.c */; };
+		D9610D08129D49E23272286BBAB1E55E /* FFT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A136FAB757AD9B19D152C2EFF02AA3B /* FFT.swift */; };
+		D9F91204104053DB22C1D01452DADE2D /* Interpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905585D6B3806496BACF180D745C2FA3 /* Interpreter.swift */; };
+		DCBE584971E1B8B2D0697193375521C1 /* fft4g.h in Copy other Private Headers */ = {isa = PBXBuildFile; fileRef = B4069FB59CE101CB925B525A4CBDCA4C /* fft4g.h */; };
+		DCC21C69B9D4078E9840D96B28CAF2CC /* resample_fractional.c in Sources */ = {isa = PBXBuildFile; fileRef = B0D1E87DCCC7363250E22226503EA1DE /* resample_fractional.c */; };
+		DE6F20D69C2C374F07D0993C2704C8F7 /* Trace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3528EFA6EC62073A75666A91A9BCC5D7 /* Trace.swift */; };
+		DF5BED181F454C0009E038D9E1317A2F /* AppleWakewordRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D71957D1F39162F41879E1033504B /* AppleWakewordRecognizer.swift */; };
+		DF6E49EE4FDEFC703681D603E5F95A80 /* QuantizationParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EE999AF60BF8F12280246A5A25234D /* QuantizationParameters.swift */; };
+		E0119261BFCA3D5470334D165B202790 /* echo_cancellation.h in Headers */ = {isa = PBXBuildFile; fileRef = D8D5436AE2732497B20A2D6933525D70 /* echo_cancellation.h */; };
+		E0B13048729DA97EE7F82BE1880F734F /* Spokestack-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 673D850B55EFDF4FDB87767849B2C5F0 /* Spokestack-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E181C6A96C3F526FF9D52CBB8EA388C2 /* SpokeStackVAD.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B0C096D7BD0C56AC5EB5808B1DDAEF1 /* SpokeStackVAD.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E269141B52A9D99D394AF569BCC71023 /* aec_core.c in Sources */ = {isa = PBXBuildFile; fileRef = C23D42E4194A84D785253341BB264ECF /* aec_core.c */; };
+		E3372A415441076A4B82D230BAA71498 /* digital_agc.h in Copy agc Private Headers */ = {isa = PBXBuildFile; fileRef = 4A266A5CCCFCB32A032CF0F38BFDEA9C /* digital_agc.h */; };
+		E354E406331B96A6C3DCDC74EE750016 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		E3FC8440BC3406EDE44879704BFEF599 /* aec_core.h in Headers */ = {isa = PBXBuildFile; fileRef = FC207185CFCC5F54641CA17B3C03DAED /* aec_core.h */; };
+		E482141EC212C86DE245C1EC44B5EC64 /* spl_sqrt.c in Sources */ = {isa = PBXBuildFile; fileRef = 54D5CFACB3472EFB2D263D519DEA8D19 /* spl_sqrt.c */; };
+		E49C7C30FE7FC0D59E7F93CDB4172A6B /* WebRTCVAD.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B6CCF81208C4A7BE4CFF6963B814DF /* WebRTCVAD.swift */; };
+		E4CB9EDAC85867772D3DE8A4ECF76A86 /* nsx_defines.h in Headers */ = {isa = PBXBuildFile; fileRef = 64B4880F6BA7F08078D5BECC3A2005AC /* nsx_defines.h */; };
+		E71613C83C3FF7E5A4B346CAEF11B198 /* vad_sp.c in Sources */ = {isa = PBXBuildFile; fileRef = A71561651CAF0F6ACDF950B7C2235178 /* vad_sp.c */; };
+		E873161E6F5CF54211246BE592B6589C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229292FDFEBB83422732FC21B5329BB4 /* Model.swift */; };
+		E8A5DB30476B818E384DCBFD2C1D513A /* filter_audio.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 3B90095118B5AB3F927B887AAB6BD016 /* filter_audio.h */; };
+		E925971D62789E7E1E3D552BB9BD9BDE /* resample_sse.h in Headers */ = {isa = PBXBuildFile; fileRef = 0131A2EFF2BBD8931AB7A6FB10EA5E23 /* resample_sse.h */; };
+		E985FAB96E1A374D34A2A5EC74DAEF07 /* digital_agc.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A266A5CCCFCB32A032CF0F38BFDEA9C /* digital_agc.h */; };
+		EB202B9E5D5FA8A39DD478D74B7EBCF4 /* InterpreterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB1711A4F8F74D61086B8CDA31A6148 /* InterpreterError.swift */; };
+		EB98B7796641D50025C57C31F788C9DF /* SpeechPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9445F7F3575A341291DA44C947DD82 /* SpeechPipeline.swift */; };
+		EBBE359230326E3135A8B782A6E8B7E3 /* spl_inl.h in Copy other Private Headers */ = {isa = PBXBuildFile; fileRef = B0549C250CAC5D647C7CF8BC385709BC /* spl_inl.h */; };
+		EC416BF71B96A1DFDE198ACA7E602310 /* filters.h in Copy zam Private Headers */ = {isa = PBXBuildFile; fileRef = D48B4D485C7269C74F68B9DE9D5EF455 /* filters.h */; };
+		EF76F8FC4EF0157FD9F3EDF0C0E3AFE9 /* vad.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BB2D1032CC8AA6035445FFD490DE30A /* vad.h */; };
+		F1C85F7D4753BB03CCB4F11656F11F3C /* filter_audio-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 337CD97CA8EC6009C6065D7F3E9CA070 /* filter_audio-dummy.m */; };
+		F223956D2169C357B8F672F06320E68B /* WITVad.m in Sources */ = {isa = PBXBuildFile; fileRef = 78280DDEC1BC2D6B7A6225C645D9653C /* WITVad.m */; };
+		F34CBBC61169FAD89FE7F849BC330FEE /* vad_filterbank.c in Sources */ = {isa = PBXBuildFile; fileRef = A810B0BD208549926AF1D587C6941C6A /* vad_filterbank.c */; };
+		F49CC372E8983D6A8B73DFFB1003DE90 /* complex_bit_reverse.c in Sources */ = {isa = PBXBuildFile; fileRef = 6805D110DE9B38DC39D425502B470FD0 /* complex_bit_reverse.c */; };
+		F6811BD9D53C40C4B7A143B8CE919217 /* float_util.c in Sources */ = {isa = PBXBuildFile; fileRef = 491733CC78B8DE057675C7B266DA159D /* float_util.c */; };
+		FAD7B8E8988CD101F08E0C69BE6E3F02 /* resample_by_2_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = D7145B566D5B01EFED11DA6C6DEA4746 /* resample_by_2_internal.h */; };
+		FC7E44EC408369F3682BE9D0D4B9AD7B /* resample_by_2.c in Sources */ = {isa = PBXBuildFile; fileRef = ECD709734493A8E5B13A202B33CC24C8 /* resample_by_2.c */; };
+		FDFD3107D5BD0DC5983EB7631D2358B6 /* delay_estimator_internal.h in Copy other Private Headers */ = {isa = PBXBuildFile; fileRef = 28F297BB9D4DAFD5A01E87CC8AFDBDA1 /* delay_estimator_internal.h */; };
+		FE87A701EC7C4BE0647C08CA74AC7916 /* vad.h in Copy vad/include Public Headers */ = {isa = PBXBuildFile; fileRef = 8BB2D1032CC8AA6035445FFD490DE30A /* vad.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1632B9DF5AA6A9DC9E59B1AD8662E070 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10418167F619D6DA72BADAD10F9EC02B;
+			remoteInfo = TensorFlowLiteSwift;
+		};
+		2BC73A2F86916A61968A0936C3514B59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC559E53E13B6FBEF4F5CC310A73AFE6;
+			remoteInfo = TensorFlowLiteC;
+		};
+		33F01BFDF121C55E4367E1B36C1CAF40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10418167F619D6DA72BADAD10F9EC02B;
+			remoteInfo = TensorFlowLiteSwift;
+		};
+		42031458FF27B3F05C7CE4204D696202 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54116DE2A0501D52F51C7C36050C4A7B;
+			remoteInfo = "Spokestack-iOS";
+		};
+		4F0CC86E63C5389467BDAF367A3890C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC559E53E13B6FBEF4F5CC310A73AFE6;
+			remoteInfo = TensorFlowLiteC;
+		};
+		55C4CB32246D82250878ABC2C86E74E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A55A434B8988F7E3BA935733E7190AA;
+			remoteInfo = filter_audio;
+		};
+		C1E98F1AF797D5627451C627EAB86FD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A55A434B8988F7E3BA935733E7190AA;
+			remoteInfo = filter_audio;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0B3282829C5F0C465F52E86D2452BE15 /* Copy zam Private Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PRIVATE_HEADERS_FOLDER_PATH)/zam";
+			dstSubfolderSpec = 16;
+			files = (
+				EC416BF71B96A1DFDE198ACA7E602310 /* filters.h in Copy zam Private Headers */,
+			);
+			name = "Copy zam Private Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C0FE58A2B7CBB683A160A4370F0C7DC /* Copy aec/include Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/aec/include";
+			dstSubfolderSpec = 16;
+			files = (
+				502C2670ADA9BD8B02027ACE305FB918 /* echo_cancellation.h in Copy aec/include Public Headers */,
+			);
+			name = "Copy aec/include Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1930D932C00BB78AF6C1F5F3634CA264 /* Copy vad/include Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/vad/include";
+			dstSubfolderSpec = 16;
+			files = (
+				FE87A701EC7C4BE0647C08CA74AC7916 /* vad.h in Copy vad/include Public Headers */,
+				7B5B09FB5FF38954E573E5CD3D5FDC53 /* webrtc_vad.h in Copy vad/include Public Headers */,
+			);
+			name = "Copy vad/include Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59466F09C6E5B6DE08C4FD00C460E1C0 /* Copy other Private Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PRIVATE_HEADERS_FOLDER_PATH)/other";
+			dstSubfolderSpec = 16;
+			files = (
+				87F07E10CCF47A39632C8A7EF7BBD8D5 /* arch.h in Copy other Private Headers */,
+				27F5E37EC34610427A6DBD4A6FFA2577 /* complex_fft_tables.h in Copy other Private Headers */,
+				79872C0CD547E84CA41D348647AC36FF /* delay_estimator.h in Copy other Private Headers */,
+				FDFD3107D5BD0DC5983EB7631D2358B6 /* delay_estimator_internal.h in Copy other Private Headers */,
+				3595D53C3C04CF8B746F2A81917C67C7 /* delay_estimator_wrapper.h in Copy other Private Headers */,
+				DCBE584971E1B8B2D0697193375521C1 /* fft4g.h in Copy other Private Headers */,
+				5C3FFA01D388F71DCC36BD4944A9F219 /* real_fft.h in Copy other Private Headers */,
+				3D94EE582B5FBBA96CA8AA99FFE64FB1 /* resample_by_2_internal.h in Copy other Private Headers */,
+				9812A1DC1643A454EE486A3E731DBB9A /* resample_sse.h in Copy other Private Headers */,
+				BF0E2278055C3B0F6EAAD26277BC1F00 /* ring_buffer.h in Copy other Private Headers */,
+				635A8BC68042E5D02E18DA2236816DB1 /* signal_processing_library.h in Copy other Private Headers */,
+				157EFF1A40F4E217099D3CCFB6DF3E68 /* speex_resampler.h in Copy other Private Headers */,
+				EBBE359230326E3135A8B782A6E8B7E3 /* spl_inl.h in Copy other Private Headers */,
+				555FEFC7533C27BEC4546C38BD71DFCC /* stack_alloc.h in Copy other Private Headers */,
+			);
+			name = "Copy other Private Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77312CE21DF5FD8DC8BC200451C3986E /* Copy . Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/.";
+			dstSubfolderSpec = 16;
+			files = (
+				E8A5DB30476B818E384DCBFD2C1D513A /* filter_audio.h in Copy . Public Headers */,
+			);
+			name = "Copy . Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B16544F78DA0AE792EBF09608731F66 /* Copy aec Private Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PRIVATE_HEADERS_FOLDER_PATH)/aec";
+			dstSubfolderSpec = 16;
+			files = (
+				4F04E802BF0F7D9BAEEFC7AA7A171959 /* aec_common.h in Copy aec Private Headers */,
+				CA313B9D1FDCBFE8961C136D8630956B /* aec_core.h in Copy aec Private Headers */,
+				07C367EF0A71F1A76C434F41DF3B0F03 /* aec_core_internal.h in Copy aec Private Headers */,
+				6F4A63FDB9890803CC6D033DC2A94493 /* aec_rdft.h in Copy aec Private Headers */,
+				4E35C201E5CCA94A74C4CD0194F86233 /* aec_resampler.h in Copy aec Private Headers */,
+				30C58A483DA9C73601C7B193C2460E26 /* echo_cancellation_internal.h in Copy aec Private Headers */,
+			);
+			name = "Copy aec Private Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		888457C743AEE7E9335419CFE9378667 /* Copy ns/include Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/ns/include";
+			dstSubfolderSpec = 16;
+			files = (
+				5C420421DD45D12D1FDC0E5F33E47C65 /* noise_suppression.h in Copy ns/include Public Headers */,
+				9886CE1AE05EFC0C3707972AE8F5639B /* noise_suppression_x.h in Copy ns/include Public Headers */,
+			);
+			name = "Copy ns/include Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B04CC4B7C0E4F93CBE2057B9165BEA9E /* Copy ns Private Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PRIVATE_HEADERS_FOLDER_PATH)/ns";
+			dstSubfolderSpec = 16;
+			files = (
+				8B597B7B7045D9402F745120D3A01B84 /* defines.h in Copy ns Private Headers */,
+				07D18F4C0B9BFFC17F2387E90B7F7C15 /* ns_core.h in Copy ns Private Headers */,
+				B55F1DC386BC76FF571924D37A89282D /* nsx_core.h in Copy ns Private Headers */,
+				7EB05D3ECD9026AE2E902B07FB87A884 /* nsx_defines.h in Copy ns Private Headers */,
+				766E509CB14822401A90344D53C014F1 /* windows_private.h in Copy ns Private Headers */,
+			);
+			name = "Copy ns Private Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E72080E17CA12E894926036D566A8CC4 /* Copy agc Private Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PRIVATE_HEADERS_FOLDER_PATH)/agc";
+			dstSubfolderSpec = 16;
+			files = (
+				9AD549740D7FF4D79B92C11D2EBA0577 /* analog_agc.h in Copy agc Private Headers */,
+				E3372A415441076A4B82D230BAA71498 /* digital_agc.h in Copy agc Private Headers */,
+			);
+			name = "Copy agc Private Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0131A2EFF2BBD8931AB7A6FB10EA5E23 /* resample_sse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = resample_sse.h; path = other/resample_sse.h; sourceTree = "<group>"; };
+		021654E2DC635249854EEDDC88A74460 /* Spokestack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Spokestack.h; path = Spokestack/Spokestack.h; sourceTree = "<group>"; };
+		08A4EAB269C2856636C7F437387461DC /* Results.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Results.swift; path = Spokestack/Results.swift; sourceTree = "<group>"; };
+		0A136FAB757AD9B19D152C2EFF02AA3B /* FFT.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FFT.swift; path = Spokestack/FFT.swift; sourceTree = "<group>"; };
+		0B0C096D7BD0C56AC5EB5808B1DDAEF1 /* SpokeStackVAD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpokeStackVAD.h; path = Spokestack/VAD/SpokeStackVAD.h; sourceTree = "<group>"; };
+		0B560293BBF94C795E325EAB5DCE3D81 /* filter_audio.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = filter_audio.modulemap; sourceTree = "<group>"; };
+		0D3078B7BA87985C823141CFDD881171 /* TensorFlowLiteSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TensorFlowLiteSwift.xcconfig; sourceTree = "<group>"; };
+		0D370F43DB9EB00C7ACC54B7430CF3CB /* echo_cancellation_internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = echo_cancellation_internal.h; path = aec/echo_cancellation_internal.h; sourceTree = "<group>"; };
+		0DFA178DFFCC1D08D88A566B4ABD7863 /* arch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = arch.h; path = other/arch.h; sourceTree = "<group>"; };
+		0F3FC9A2726F8F311A7B5C603C24CDA0 /* TensorFlowLiteSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TensorFlowLiteSwift.modulemap; sourceTree = "<group>"; };
+		0FCFC94264A0C41A753CDC87ED1F844D /* TextToSpeechInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextToSpeechInput.swift; path = Spokestack/TextToSpeechInput.swift; sourceTree = "<group>"; };
+		0FD7601AED4E353B2E11206E1C985050 /* complex_fft_tables.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = complex_fft_tables.h; path = other/complex_fft_tables.h; sourceTree = "<group>"; };
+		10B04B756B5403539671099B1922D3B1 /* noise_suppression.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = noise_suppression.h; path = ns/include/noise_suppression.h; sourceTree = "<group>"; };
+		12C6B24CC70D6340233B895F48BF5D12 /* filter_audio.c */ = {isa = PBXFileReference; includeInIndex = 1; path = filter_audio.c; sourceTree = "<group>"; };
+		13C94F23522BF84B8823C87554EC8299 /* TensorFlowLite.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TensorFlowLite.swift; path = tensorflow/lite/experimental/swift/Sources/TensorFlowLite.swift; sourceTree = "<group>"; };
+		13CC89CD779047555203199987024BC7 /* AudioControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioControllerDelegate.swift; path = Spokestack/AudioControllerDelegate.swift; sourceTree = "<group>"; };
+		140D37F9E0DB7D7C2BC043CE8298E0F6 /* filter_audio.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = filter_audio.xcconfig; sourceTree = "<group>"; };
+		14F5960D1ED71149DAF0E1B3018654A9 /* min_max_operations.c */ = {isa = PBXFileReference; includeInIndex = 1; name = min_max_operations.c; path = other/min_max_operations.c; sourceTree = "<group>"; };
+		19C927826B69BDA14B3B6EBF8016FEA7 /* vad_core.c */ = {isa = PBXFileReference; includeInIndex = 1; name = vad_core.c; path = vad/vad_core.c; sourceTree = "<group>"; };
+		1B86F75B998C9F76F4B7B95413C920F1 /* real_fft.c */ = {isa = PBXFileReference; includeInIndex = 1; name = real_fft.c; path = other/real_fft.c; sourceTree = "<group>"; };
+		1CE20FF240F3DB8A1CF29B1F7475D9E1 /* Data+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Extensions.swift"; path = "Spokestack/Extensions/Data+Extensions.swift"; sourceTree = "<group>"; };
+		1ECD79FF74C31C620D8B8799B682ED12 /* delay_estimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = delay_estimator.h; path = other/delay_estimator.h; sourceTree = "<group>"; };
+		20B0331BBD334030AC205523A93E49B5 /* SpeechConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeechConfiguration.swift; path = Spokestack/SpeechConfiguration.swift; sourceTree = "<group>"; };
+		229292FDFEBB83422732FC21B5329BB4 /* Model.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Model.swift; path = tensorflow/lite/experimental/swift/Sources/Model.swift; sourceTree = "<group>"; };
+		22A2ECBD37A42700D5C01D73205D6512 /* division_operations.c */ = {isa = PBXFileReference; includeInIndex = 1; name = division_operations.c; path = other/division_operations.c; sourceTree = "<group>"; };
+		22FCAF7A59E45FC00F8BDA10D2673B5D /* analog_agc.c */ = {isa = PBXFileReference; includeInIndex = 1; name = analog_agc.c; path = agc/analog_agc.c; sourceTree = "<group>"; };
+		2588F7C4B956670EBB4CCEB3782C3DDC /* energy.c */ = {isa = PBXFileReference; includeInIndex = 1; name = energy.c; path = other/energy.c; sourceTree = "<group>"; };
+		26E914850786D467B793B9A208B4D8F0 /* vad_gmm.c */ = {isa = PBXFileReference; includeInIndex = 1; name = vad_gmm.c; path = vad/vad_gmm.c; sourceTree = "<group>"; };
+		28B55F25876E1323EBD53E5F25C0AD70 /* copy_set_operations.c */ = {isa = PBXFileReference; includeInIndex = 1; name = copy_set_operations.c; path = other/copy_set_operations.c; sourceTree = "<group>"; };
+		28F297BB9D4DAFD5A01E87CC8AFDBDA1 /* delay_estimator_internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = delay_estimator_internal.h; path = other/delay_estimator_internal.h; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		337CD97CA8EC6009C6065D7F3E9CA070 /* filter_audio-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "filter_audio-dummy.m"; sourceTree = "<group>"; };
+		341CA129318194458825C17A92254569 /* Pods-SpokestackStarter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SpokestackStarter-umbrella.h"; sourceTree = "<group>"; };
+		3528EFA6EC62073A75666A91A9BCC5D7 /* Trace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Trace.swift; path = Spokestack/Trace.swift; sourceTree = "<group>"; };
+		36015C10B0DC272AD0C85A4457F5C6B2 /* vad_filterbank.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = vad_filterbank.h; path = vad/vad_filterbank.h; sourceTree = "<group>"; };
+		367F8435FC694FA0F7F32ED8C38A4148 /* fft4g.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fft4g.c; path = other/fft4g.c; sourceTree = "<group>"; };
+		3773425C1F64BFAF80FE5AD87FBFFA17 /* complex_fft.c */ = {isa = PBXFileReference; includeInIndex = 1; name = complex_fft.c; path = other/complex_fft.c; sourceTree = "<group>"; };
+		37C17420D8A16EA06F9FFC776370E7F6 /* vector_scaling_operations.c */ = {isa = PBXFileReference; includeInIndex = 1; name = vector_scaling_operations.c; path = other/vector_scaling_operations.c; sourceTree = "<group>"; };
+		3B90095118B5AB3F927B887AAB6BD016 /* filter_audio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = filter_audio.h; sourceTree = "<group>"; };
+		3E3DCEEA11B2D1D4260E12FCF9F51A77 /* nsx_core.c */ = {isa = PBXFileReference; includeInIndex = 1; name = nsx_core.c; path = ns/nsx_core.c; sourceTree = "<group>"; };
+		3EAF06EFC476A634DD6CC2E85D1AAAE1 /* downsample_fast.c */ = {isa = PBXFileReference; includeInIndex = 1; name = downsample_fast.c; path = other/downsample_fast.c; sourceTree = "<group>"; };
+		3F208983C5E7BE51CC3FBEB6D2C14990 /* speex_resampler.c */ = {isa = PBXFileReference; includeInIndex = 1; name = speex_resampler.c; path = other/speex_resampler.c; sourceTree = "<group>"; };
+		4125846D04DE38FCC605EA05311A8F52 /* Spokestack-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Spokestack-iOS-prefix.pch"; sourceTree = "<group>"; };
+		419D5C771A129C36A5192D253C3D61CA /* nsx_core_c.c */ = {isa = PBXFileReference; includeInIndex = 1; name = nsx_core_c.c; path = ns/nsx_core_c.c; sourceTree = "<group>"; };
+		42CF171F70F30ECF52B7770C130C8F06 /* Tensor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tensor.swift; path = tensorflow/lite/experimental/swift/Sources/Tensor.swift; sourceTree = "<group>"; };
+		43504CD668E06F781C87E9A31484675E /* ns_core.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ns_core.c; path = ns/ns_core.c; sourceTree = "<group>"; };
+		474EA0D1870190F0C4925C83C97A6B6D /* aec_resampler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aec_resampler.h; path = aec/aec_resampler.h; sourceTree = "<group>"; };
+		48EEE39274EECD342AF54833006B4989 /* aec_rdft_sse2.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aec_rdft_sse2.c; path = aec/aec_rdft_sse2.c; sourceTree = "<group>"; };
+		490FAD6E42D7D2DB01D692382B6D2303 /* aec_resampler.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aec_resampler.c; path = aec/aec_resampler.c; sourceTree = "<group>"; };
+		491733CC78B8DE057675C7B266DA159D /* float_util.c */ = {isa = PBXFileReference; includeInIndex = 1; name = float_util.c; path = other/float_util.c; sourceTree = "<group>"; };
+		4A266A5CCCFCB32A032CF0F38BFDEA9C /* digital_agc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = digital_agc.h; path = agc/digital_agc.h; sourceTree = "<group>"; };
+		4B2A4EEB98BCFF89DFB9FFD478AD2BF7 /* resample_48khz.c */ = {isa = PBXFileReference; includeInIndex = 1; name = resample_48khz.c; path = other/resample_48khz.c; sourceTree = "<group>"; };
+		4BB1711A4F8F74D61086B8CDA31A6148 /* InterpreterError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InterpreterError.swift; path = tensorflow/lite/experimental/swift/Sources/InterpreterError.swift; sourceTree = "<group>"; };
+		4E853A1D693812B5CCE6267B3265944E /* webrtc_vad.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = webrtc_vad.h; path = vad/include/webrtc_vad.h; sourceTree = "<group>"; };
+		502552544E93DC0A2F17F60DE0841254 /* Pods-SpokestackStarter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SpokestackStarter.modulemap"; sourceTree = "<group>"; };
+		54D5CFACB3472EFB2D263D519DEA8D19 /* spl_sqrt.c */ = {isa = PBXFileReference; includeInIndex = 1; name = spl_sqrt.c; path = other/spl_sqrt.c; sourceTree = "<group>"; };
+		556BCFCFCB0804AF634B9CD5E3B1A8C3 /* filter_audio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = filter_audio.framework; path = filter_audio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55E0E2909FAB4390E0803DC953158D12 /* echo_cancellation.c */ = {isa = PBXFileReference; includeInIndex = 1; name = echo_cancellation.c; path = aec/echo_cancellation.c; sourceTree = "<group>"; };
+		5872B3C1A2B0C1E3906F65D613F08624 /* delay_estimator_wrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = delay_estimator_wrapper.h; path = other/delay_estimator_wrapper.h; sourceTree = "<group>"; };
+		5983E2AE6C99391BD7F7BD745FBCD5EF /* digital_agc.c */ = {isa = PBXFileReference; includeInIndex = 1; name = digital_agc.c; path = agc/digital_agc.c; sourceTree = "<group>"; };
+		5A0EB2992DF27502CAA788153761F46A /* vad_gmm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = vad_gmm.h; path = vad/vad_gmm.h; sourceTree = "<group>"; };
+		5E6CDD60E2B1A9E87F2FDA87B7F2663D /* TFLiteWakewordRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TFLiteWakewordRecognizer.swift; path = Spokestack/TFLiteWakewordRecognizer.swift; sourceTree = "<group>"; };
+		5EFBFF9FE8520D1265BA72E8EA374955 /* aec_core_sse2.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aec_core_sse2.c; path = aec/aec_core_sse2.c; sourceTree = "<group>"; };
+		624CE4A79C7C3D0A4366788B5DC516B6 /* splitting_filter.c */ = {isa = PBXFileReference; includeInIndex = 1; name = splitting_filter.c; path = other/splitting_filter.c; sourceTree = "<group>"; };
+		628A6BA4319DF086F8E68304E398AC22 /* Spokestack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Spokestack.framework; path = "Spokestack-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		64B4880F6BA7F08078D5BECC3A2005AC /* nsx_defines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = nsx_defines.h; path = ns/nsx_defines.h; sourceTree = "<group>"; };
+		65D18885F63F2F4D200929A4165B795E /* analog_agc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = analog_agc.h; path = agc/analog_agc.h; sourceTree = "<group>"; };
+		673D850B55EFDF4FDB87767849B2C5F0 /* Spokestack-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Spokestack-iOS-umbrella.h"; sourceTree = "<group>"; };
+		673EA874A9B8A5EE22145CF7DE404239 /* TextToSpeechDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextToSpeechDelegate.swift; path = Spokestack/TextToSpeechDelegate.swift; sourceTree = "<group>"; };
+		6805D110DE9B38DC39D425502B470FD0 /* complex_bit_reverse.c */ = {isa = PBXFileReference; includeInIndex = 1; name = complex_bit_reverse.c; path = other/complex_bit_reverse.c; sourceTree = "<group>"; };
+		6A9FD4B8A7388999D207F4D8E7A3797D /* spl_init.c */ = {isa = PBXFileReference; includeInIndex = 1; name = spl_init.c; path = other/spl_init.c; sourceTree = "<group>"; };
+		6AA547E47199BBBC753D3AB3D1929448 /* real_fft.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = real_fft.h; path = other/real_fft.h; sourceTree = "<group>"; };
+		6EF9AAB1CA1539D37BCEF62AE4E91291 /* Pods-SpokestackStarter-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SpokestackStarter-acknowledgements.markdown"; sourceTree = "<group>"; };
+		74BCE66221558C5A01492CB4720D3183 /* stack_alloc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = stack_alloc.h; path = other/stack_alloc.h; sourceTree = "<group>"; };
+		78280DDEC1BC2D6B7A6225C645D9653C /* WITVad.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WITVad.m; path = Spokestack/VAD/Wit/WITVad.m; sourceTree = "<group>"; };
+		7C9445F7F3575A341291DA44C947DD82 /* SpeechPipeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeechPipeline.swift; path = Spokestack/SpeechPipeline.swift; sourceTree = "<group>"; };
+		7D3E76830D51BCBBBAB6351D997B4E81 /* mock_vad.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mock_vad.h; path = vad/mock/mock_vad.h; sourceTree = "<group>"; };
+		80009BB58ACA9FF9C7877B71BD8DA080 /* aec_core_internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aec_core_internal.h; path = aec/aec_core_internal.h; sourceTree = "<group>"; };
+		80D1CD399FE78B2D38DF601767B1480E /* cross_correlation.c */ = {isa = PBXFileReference; includeInIndex = 1; name = cross_correlation.c; path = other/cross_correlation.c; sourceTree = "<group>"; };
+		83932DC7FCA61844E04199F857F76375 /* defines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = defines.h; path = ns/defines.h; sourceTree = "<group>"; };
+		84CAEDB7DA30B42140C231C40A5F32ED /* aec_rdft.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aec_rdft.h; path = aec/aec_rdft.h; sourceTree = "<group>"; };
+		882350AEF9F0785C06FD85DAEA86BA81 /* noise_suppression_x.c */ = {isa = PBXFileReference; includeInIndex = 1; name = noise_suppression_x.c; path = ns/noise_suppression_x.c; sourceTree = "<group>"; };
+		88F6DDD45801D9C8F8EA397C0C114554 /* vad_core.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = vad_core.h; path = vad/vad_core.h; sourceTree = "<group>"; };
+		890F483FC50F1F1DB15205E4D2EB42B8 /* SpeechContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeechContext.swift; path = Spokestack/SpeechContext.swift; sourceTree = "<group>"; };
+		8A6678E6D31CD09CD2D605B321C7FA16 /* SpeechProcessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeechProcessor.swift; path = Spokestack/SpeechProcessor.swift; sourceTree = "<group>"; };
+		8B32432D7E447D9F03E87EE8BB500321 /* AppleSpeechRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppleSpeechRecognizer.swift; path = Spokestack/AppleSpeechRecognizer.swift; sourceTree = "<group>"; };
+		8BB2D1032CC8AA6035445FFD490DE30A /* vad.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = vad.h; path = vad/include/vad.h; sourceTree = "<group>"; };
+		8E82CD2AD0BB782CA639F96FEDF15BC7 /* Spokestack-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Spokestack-iOS-dummy.m"; sourceTree = "<group>"; };
+		8EBB2F6F898D8C834F624C696E154275 /* aec_common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aec_common.h; path = aec/aec_common.h; sourceTree = "<group>"; };
+		8EC7706205F648B38042CFAA768BED2A /* SpeechProcessors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeechProcessors.swift; path = Spokestack/SpeechProcessors.swift; sourceTree = "<group>"; };
+		8F05CB5181281AD95078DCD941F73B88 /* spl_sqrt_floor.c */ = {isa = PBXFileReference; includeInIndex = 1; name = spl_sqrt_floor.c; path = other/spl_sqrt_floor.c; sourceTree = "<group>"; };
+		900456815D068F1648913BAE06455639 /* TensorFlowLiteC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TensorFlowLiteC.framework; path = Frameworks/TensorFlowLiteC.framework; sourceTree = "<group>"; };
+		905585D6B3806496BACF180D745C2FA3 /* Interpreter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Interpreter.swift; path = tensorflow/lite/experimental/swift/Sources/Interpreter.swift; sourceTree = "<group>"; };
+		91EE999AF60BF8F12280246A5A25234D /* QuantizationParameters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuantizationParameters.swift; path = tensorflow/lite/experimental/swift/Sources/QuantizationParameters.swift; sourceTree = "<group>"; };
+		923F1C91BC438457CC5A77CFA153A18B /* aec_rdft.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aec_rdft.c; path = aec/aec_rdft.c; sourceTree = "<group>"; };
+		937F94AA3EC4FC6461655C188A7561E7 /* signal_processing_library.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = signal_processing_library.h; path = other/signal_processing_library.h; sourceTree = "<group>"; };
+		959FE68C34672AC0A8F741F8EAFE0B8E /* SignalProcessing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignalProcessing.swift; path = Spokestack/SignalProcessing.swift; sourceTree = "<group>"; };
+		9AC1442A21232868EAE3953D6492785A /* WITCvad.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WITCvad.m; path = Spokestack/VAD/Wit/WITCvad.m; sourceTree = "<group>"; };
+		9AFD94DC84C02F54DB95159F12886A32 /* TextToSpeechResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextToSpeechResult.swift; path = Spokestack/TextToSpeechResult.swift; sourceTree = "<group>"; };
+		9B2355B1A56900493BDCFD71B659A2D9 /* delay_estimator.c */ = {isa = PBXFileReference; includeInIndex = 1; name = delay_estimator.c; path = other/delay_estimator.c; sourceTree = "<group>"; };
+		9B7940B77D9D170254577235712F9834 /* TensorFlowLiteSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TensorFlowLiteSwift-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EC0BB6583973F4F6A6D24E1F468002D /* VADDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VADDelegate.swift; path = Spokestack/VADDelegate.swift; sourceTree = "<group>"; };
+		A0C596C29ED52F30B5C4DBF6B8290322 /* speex_resampler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = speex_resampler.h; path = other/speex_resampler.h; sourceTree = "<group>"; };
+		A16E6327FBC4A51C11ADA4BF9CE2543C /* randomization_functions.c */ = {isa = PBXFileReference; includeInIndex = 1; name = randomization_functions.c; path = other/randomization_functions.c; sourceTree = "<group>"; };
+		A3717A8427977D011E81EB3FB1FEE633 /* RingBuffer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RingBuffer.swift; path = Spokestack/RingBuffer.swift; sourceTree = "<group>"; };
+		A37B061ABAF8C28CB9964C3106792D4C /* WITCvad.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WITCvad.h; path = Spokestack/VAD/Wit/WITCvad.h; sourceTree = "<group>"; };
+		A4927ABBAF2DE23305940CE10551781C /* Pods-SpokestackStarter-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SpokestackStarter-acknowledgements.plist"; sourceTree = "<group>"; };
+		A5CFFD37C0E0932D23CB941F6AD42756 /* resample_by_2_internal.c */ = {isa = PBXFileReference; includeInIndex = 1; name = resample_by_2_internal.c; path = other/resample_by_2_internal.c; sourceTree = "<group>"; };
+		A6C0521C4208B16A4F129E5C9C7F0F26 /* filter_audio-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "filter_audio-prefix.pch"; sourceTree = "<group>"; };
+		A6D7CBE0AD939FE32D932509A590CD74 /* TextToSpeech.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextToSpeech.swift; path = Spokestack/TextToSpeech.swift; sourceTree = "<group>"; };
+		A6F715F7F392FAA474A5471FB660D1D7 /* noise_suppression_x.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = noise_suppression_x.h; path = ns/include/noise_suppression_x.h; sourceTree = "<group>"; };
+		A71561651CAF0F6ACDF950B7C2235178 /* vad_sp.c */ = {isa = PBXFileReference; includeInIndex = 1; name = vad_sp.c; path = vad/vad_sp.c; sourceTree = "<group>"; };
+		A7EE2C5AC5A45C23222316630EB26D64 /* Pods-SpokestackStarter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpokestackStarter.release.xcconfig"; sourceTree = "<group>"; };
+		A810B0BD208549926AF1D587C6941C6A /* vad_filterbank.c */ = {isa = PBXFileReference; includeInIndex = 1; name = vad_filterbank.c; path = vad/vad_filterbank.c; sourceTree = "<group>"; };
+		B0549C250CAC5D647C7CF8BC385709BC /* spl_inl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = spl_inl.h; path = other/spl_inl.h; sourceTree = "<group>"; };
+		B0D1E87DCCC7363250E22226503EA1DE /* resample_fractional.c */ = {isa = PBXFileReference; includeInIndex = 1; name = resample_fractional.c; path = other/resample_fractional.c; sourceTree = "<group>"; };
+		B4069FB59CE101CB925B525A4CBDCA4C /* fft4g.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fft4g.h; path = other/fft4g.h; sourceTree = "<group>"; };
+		B58A54B053B07F405C458FBFC7F2C40F /* ring_buffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ring_buffer.h; path = other/ring_buffer.h; sourceTree = "<group>"; };
+		B7B6CCF81208C4A7BE4CFF6963B814DF /* WebRTCVAD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebRTCVAD.swift; path = Spokestack/WebRTCVAD.swift; sourceTree = "<group>"; };
+		B997D630FE91A64287BA4E20991F02A1 /* Spokestack-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Spokestack-iOS-Info.plist"; sourceTree = "<group>"; };
+		BABF8D1E2943F24DE35B117D2A690050 /* TensorFlowLiteSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TensorFlowLiteSwift-umbrella.h"; sourceTree = "<group>"; };
+		BDD3E00166D17232E29E0ED4A978461B /* TensorFlowLiteSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TensorFlowLiteSwift-prefix.pch"; sourceTree = "<group>"; };
+		BEF45E650326F960C0CC29BDD1EFD167 /* AudioController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioController.swift; path = Spokestack/AudioController.swift; sourceTree = "<group>"; };
+		BFAA5DF85B99015078E9DD03FBC806E5 /* webrtc_vad.c */ = {isa = PBXFileReference; includeInIndex = 1; name = webrtc_vad.c; path = vad/webrtc_vad.c; sourceTree = "<group>"; };
+		BFB2E8354B838C1A0B5221A9FF2A350B /* Pods-SpokestackStarter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpokestackStarter.debug.xcconfig"; sourceTree = "<group>"; };
+		C0E8F647D365EC18788D846D92683552 /* TensorFlowLiteC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TensorFlowLiteC.xcconfig; sourceTree = "<group>"; };
+		C0ED143ACAE7900C83A5A91FBC6A80D2 /* InterpreterOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InterpreterOptions.swift; path = tensorflow/lite/experimental/swift/Sources/InterpreterOptions.swift; sourceTree = "<group>"; };
+		C1B353240663FE62AE2F6AD2971D949B /* ring_buffer.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ring_buffer.c; path = other/ring_buffer.c; sourceTree = "<group>"; };
+		C23D42E4194A84D785253341BB264ECF /* aec_core.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aec_core.c; path = aec/aec_core.c; sourceTree = "<group>"; };
+		C4975934B26FDD68A65A8F3FC80E7EFE /* gain_control.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = gain_control.h; path = agc/include/gain_control.h; sourceTree = "<group>"; };
+		C627903D0D16EF001A3C5519DF354A5D /* filters.c */ = {isa = PBXFileReference; includeInIndex = 1; name = filters.c; path = zam/filters.c; sourceTree = "<group>"; };
+		CA9E76781EB5F449CB56EC5A46AFC1DB /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Spokestack/Error.swift; sourceTree = "<group>"; };
+		D0899BEA033004B9A93FD7B515CDC247 /* Pods-SpokestackStarter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SpokestackStarter-dummy.m"; sourceTree = "<group>"; };
+		D0C5E38E5EB27D6D824FFF356DD710A3 /* ns_core.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ns_core.h; path = ns/ns_core.h; sourceTree = "<group>"; };
+		D48B4D485C7269C74F68B9DE9D5EF455 /* filters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = filters.h; path = zam/filters.h; sourceTree = "<group>"; };
+		D7145B566D5B01EFED11DA6C6DEA4746 /* resample_by_2_internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = resample_by_2_internal.h; path = other/resample_by_2_internal.h; sourceTree = "<group>"; };
+		D7FF363836EA831F3F175632716CEC1F /* PipelineDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PipelineDelegate.swift; path = Spokestack/PipelineDelegate.swift; sourceTree = "<group>"; };
+		D8D5436AE2732497B20A2D6933525D70 /* echo_cancellation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = echo_cancellation.h; path = aec/include/echo_cancellation.h; sourceTree = "<group>"; };
+		D9819BD5F09C47A90A1CEDCD4340CD42 /* filter_audio-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "filter_audio-Info.plist"; sourceTree = "<group>"; };
+		DA27EAA122EF167337FD91B6BC5249F9 /* Pods_SpokestackStarter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SpokestackStarter.framework; path = "Pods-SpokestackStarter.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA44CEBE0297E2BA25D694B2E93609F6 /* Spokestack-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Spokestack-iOS.xcconfig"; sourceTree = "<group>"; };
+		DC7230298A1707A16077CED3DF3FCA26 /* Spokestack-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Spokestack-iOS.modulemap"; sourceTree = "<group>"; };
+		DE05D1586C78027E4872B89B64A98D25 /* noise_suppression.c */ = {isa = PBXFileReference; includeInIndex = 1; name = noise_suppression.c; path = ns/noise_suppression.c; sourceTree = "<group>"; };
+		DE3D71957D1F39162F41879E1033504B /* AppleWakewordRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppleWakewordRecognizer.swift; path = Spokestack/AppleWakewordRecognizer.swift; sourceTree = "<group>"; };
+		DEE7DA568118B75B40E686C78750AAC5 /* Pods-SpokestackStarter-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SpokestackStarter-Info.plist"; sourceTree = "<group>"; };
+		E04B1F40D6CBA68D3BDA9400C56D46B9 /* dot_product_with_scale.c */ = {isa = PBXFileReference; includeInIndex = 1; name = dot_product_with_scale.c; path = other/dot_product_with_scale.c; sourceTree = "<group>"; };
+		E0B71FE13AA6B05010059EB4B8D87919 /* TensorFlowLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TensorFlowLite.framework; path = TensorFlowLiteSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5C7E7A9B05081EFC12C530C8B02436A /* WITVad.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WITVad.h; path = Spokestack/VAD/Wit/WITVad.h; sourceTree = "<group>"; };
+		E667636FFFC42CB29C8C6A9DF7CED763 /* delay_estimator_wrapper.c */ = {isa = PBXFileReference; includeInIndex = 1; name = delay_estimator_wrapper.c; path = other/delay_estimator_wrapper.c; sourceTree = "<group>"; };
+		E680EC109ECDEEFF1FAE174BB3A81263 /* high_pass_filter.c */ = {isa = PBXFileReference; includeInIndex = 1; name = high_pass_filter.c; path = other/high_pass_filter.c; sourceTree = "<group>"; };
+		E7026B5D2EBA2BCDAF8C2325EE458F4D /* get_scaling_square.c */ = {isa = PBXFileReference; includeInIndex = 1; name = get_scaling_square.c; path = other/get_scaling_square.c; sourceTree = "<group>"; };
+		E7A29AC2D8E52AE5566EE0DE65028DF8 /* vad_sp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = vad_sp.h; path = vad/vad_sp.h; sourceTree = "<group>"; };
+		E84A40C8BEEEA3B6574C2537416FDC8E /* SpeechEventListener.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeechEventListener.swift; path = Spokestack/SpeechEventListener.swift; sourceTree = "<group>"; };
+		E99B038DD6EE622781FE0AC5B11739E9 /* nsx_core.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = nsx_core.h; path = ns/nsx_core.h; sourceTree = "<group>"; };
+		ECD709734493A8E5B13A202B33CC24C8 /* resample_by_2.c */ = {isa = PBXFileReference; includeInIndex = 1; name = resample_by_2.c; path = other/resample_by_2.c; sourceTree = "<group>"; };
+		F1089C8A0BF69B6CF779BE3AF1382966 /* TensorFlowLiteSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TensorFlowLiteSwift-Info.plist"; sourceTree = "<group>"; };
+		F50050E8F50620F04CC643709C636254 /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Spokestack/Typealiases.swift; sourceTree = "<group>"; };
+		F5CBF929F77166C3FA5151919CC263F1 /* windows_private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = windows_private.h; path = ns/windows_private.h; sourceTree = "<group>"; };
+		FC207185CFCC5F54641CA17B3C03DAED /* aec_core.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aec_core.h; path = aec/aec_core.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A8029AB288C8EF4C190BEAD283DA6F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C90C24B862B84330D187B6815D32EE82 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65B763530E97970C121FDBCBC8D8B904 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20A14561AF767248E1078A7ADF1C3698 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA453B98389720C6EE16D32CDD996D1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51F7FBD76A9FCDB212853DD0A02F6D54 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADE0248B57DAD3FB620A1FDACD74F19D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E354E406331B96A6C3DCDC74EE750016 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12B6A08FD61341701C832A88B99DA136 /* TensorFlowLiteC */ = {
+			isa = PBXGroup;
+			children = (
+				F417E03CE4F92BAF29302E037085AC38 /* Frameworks */,
+				A3C5D80C6ACC87DCC736DFB4069A2819 /* Support Files */,
+			);
+			name = TensorFlowLiteC;
+			path = TensorFlowLiteC;
+			sourceTree = "<group>";
+		};
+		2C95DDC1FD53AEC8CE4B71FAD05AF6DE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F3FC9A2726F8F311A7B5C603C24CDA0 /* TensorFlowLiteSwift.modulemap */,
+				0D3078B7BA87985C823141CFDD881171 /* TensorFlowLiteSwift.xcconfig */,
+				9B7940B77D9D170254577235712F9834 /* TensorFlowLiteSwift-dummy.m */,
+				F1089C8A0BF69B6CF779BE3AF1382966 /* TensorFlowLiteSwift-Info.plist */,
+				BDD3E00166D17232E29E0ED4A978461B /* TensorFlowLiteSwift-prefix.pch */,
+				BABF8D1E2943F24DE35B117D2A690050 /* TensorFlowLiteSwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TensorFlowLiteSwift";
+			sourceTree = "<group>";
+		};
+		44C9214EE07B16D187BB4EC2C4FD9DA6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC7230298A1707A16077CED3DF3FCA26 /* Spokestack-iOS.modulemap */,
+				DA44CEBE0297E2BA25D694B2E93609F6 /* Spokestack-iOS.xcconfig */,
+				8E82CD2AD0BB782CA639F96FEDF15BC7 /* Spokestack-iOS-dummy.m */,
+				B997D630FE91A64287BA4E20991F02A1 /* Spokestack-iOS-Info.plist */,
+				4125846D04DE38FCC605EA05311A8F52 /* Spokestack-iOS-prefix.pch */,
+				673D850B55EFDF4FDB87767849B2C5F0 /* Spokestack-iOS-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Spokestack-iOS";
+			sourceTree = "<group>";
+		};
+		4506D1F3FBD41C9D6E92EE0763E6742D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				556BCFCFCB0804AF634B9CD5E3B1A8C3 /* filter_audio.framework */,
+				DA27EAA122EF167337FD91B6BC5249F9 /* Pods_SpokestackStarter.framework */,
+				628A6BA4319DF086F8E68304E398AC22 /* Spokestack.framework */,
+				E0B71FE13AA6B05010059EB4B8D87919 /* TensorFlowLite.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E696A6CBF2C348E27DACF9BACBB407C /* Spokestack-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8B32432D7E447D9F03E87EE8BB500321 /* AppleSpeechRecognizer.swift */,
+				DE3D71957D1F39162F41879E1033504B /* AppleWakewordRecognizer.swift */,
+				BEF45E650326F960C0CC29BDD1EFD167 /* AudioController.swift */,
+				13CC89CD779047555203199987024BC7 /* AudioControllerDelegate.swift */,
+				1CE20FF240F3DB8A1CF29B1F7475D9E1 /* Data+Extensions.swift */,
+				CA9E76781EB5F449CB56EC5A46AFC1DB /* Error.swift */,
+				0A136FAB757AD9B19D152C2EFF02AA3B /* FFT.swift */,
+				D7FF363836EA831F3F175632716CEC1F /* PipelineDelegate.swift */,
+				08A4EAB269C2856636C7F437387461DC /* Results.swift */,
+				A3717A8427977D011E81EB3FB1FEE633 /* RingBuffer.swift */,
+				959FE68C34672AC0A8F741F8EAFE0B8E /* SignalProcessing.swift */,
+				20B0331BBD334030AC205523A93E49B5 /* SpeechConfiguration.swift */,
+				890F483FC50F1F1DB15205E4D2EB42B8 /* SpeechContext.swift */,
+				E84A40C8BEEEA3B6574C2537416FDC8E /* SpeechEventListener.swift */,
+				7C9445F7F3575A341291DA44C947DD82 /* SpeechPipeline.swift */,
+				8A6678E6D31CD09CD2D605B321C7FA16 /* SpeechProcessor.swift */,
+				8EC7706205F648B38042CFAA768BED2A /* SpeechProcessors.swift */,
+				021654E2DC635249854EEDDC88A74460 /* Spokestack.h */,
+				0B0C096D7BD0C56AC5EB5808B1DDAEF1 /* SpokeStackVAD.h */,
+				A6D7CBE0AD939FE32D932509A590CD74 /* TextToSpeech.swift */,
+				673EA874A9B8A5EE22145CF7DE404239 /* TextToSpeechDelegate.swift */,
+				0FCFC94264A0C41A753CDC87ED1F844D /* TextToSpeechInput.swift */,
+				9AFD94DC84C02F54DB95159F12886A32 /* TextToSpeechResult.swift */,
+				5E6CDD60E2B1A9E87F2FDA87B7F2663D /* TFLiteWakewordRecognizer.swift */,
+				3528EFA6EC62073A75666A91A9BCC5D7 /* Trace.swift */,
+				F50050E8F50620F04CC643709C636254 /* Typealiases.swift */,
+				9EC0BB6583973F4F6A6D24E1F468002D /* VADDelegate.swift */,
+				B7B6CCF81208C4A7BE4CFF6963B814DF /* WebRTCVAD.swift */,
+				A37B061ABAF8C28CB9964C3106792D4C /* WITCvad.h */,
+				9AC1442A21232868EAE3953D6492785A /* WITCvad.m */,
+				E5C7E7A9B05081EFC12C530C8B02436A /* WITVad.h */,
+				78280DDEC1BC2D6B7A6225C645D9653C /* WITVad.m */,
+				44C9214EE07B16D187BB4EC2C4FD9DA6 /* Support Files */,
+			);
+			name = "Spokestack-iOS";
+			path = "Spokestack-iOS";
+			sourceTree = "<group>";
+		};
+		502F06A74203FF01D4C981CF79EB0B31 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A233C2B698696321991BEFC76CEFAD76 /* Pods-SpokestackStarter */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		5A76F35BB08971A29932BACABED6892B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0B560293BBF94C795E325EAB5DCE3D81 /* filter_audio.modulemap */,
+				140D37F9E0DB7D7C2BC043CE8298E0F6 /* filter_audio.xcconfig */,
+				337CD97CA8EC6009C6065D7F3E9CA070 /* filter_audio-dummy.m */,
+				D9819BD5F09C47A90A1CEDCD4340CD42 /* filter_audio-Info.plist */,
+				A6C0521C4208B16A4F129E5C9C7F0F26 /* filter_audio-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/filter_audio";
+			sourceTree = "<group>";
+		};
+		87A68C3BE5E89DA69A86C2428B2BC72E /* filter_audio */ = {
+			isa = PBXGroup;
+			children = (
+				8EBB2F6F898D8C834F624C696E154275 /* aec_common.h */,
+				C23D42E4194A84D785253341BB264ECF /* aec_core.c */,
+				FC207185CFCC5F54641CA17B3C03DAED /* aec_core.h */,
+				80009BB58ACA9FF9C7877B71BD8DA080 /* aec_core_internal.h */,
+				5EFBFF9FE8520D1265BA72E8EA374955 /* aec_core_sse2.c */,
+				923F1C91BC438457CC5A77CFA153A18B /* aec_rdft.c */,
+				84CAEDB7DA30B42140C231C40A5F32ED /* aec_rdft.h */,
+				48EEE39274EECD342AF54833006B4989 /* aec_rdft_sse2.c */,
+				490FAD6E42D7D2DB01D692382B6D2303 /* aec_resampler.c */,
+				474EA0D1870190F0C4925C83C97A6B6D /* aec_resampler.h */,
+				22FCAF7A59E45FC00F8BDA10D2673B5D /* analog_agc.c */,
+				65D18885F63F2F4D200929A4165B795E /* analog_agc.h */,
+				0DFA178DFFCC1D08D88A566B4ABD7863 /* arch.h */,
+				6805D110DE9B38DC39D425502B470FD0 /* complex_bit_reverse.c */,
+				3773425C1F64BFAF80FE5AD87FBFFA17 /* complex_fft.c */,
+				0FD7601AED4E353B2E11206E1C985050 /* complex_fft_tables.h */,
+				28B55F25876E1323EBD53E5F25C0AD70 /* copy_set_operations.c */,
+				80D1CD399FE78B2D38DF601767B1480E /* cross_correlation.c */,
+				83932DC7FCA61844E04199F857F76375 /* defines.h */,
+				9B2355B1A56900493BDCFD71B659A2D9 /* delay_estimator.c */,
+				1ECD79FF74C31C620D8B8799B682ED12 /* delay_estimator.h */,
+				28F297BB9D4DAFD5A01E87CC8AFDBDA1 /* delay_estimator_internal.h */,
+				E667636FFFC42CB29C8C6A9DF7CED763 /* delay_estimator_wrapper.c */,
+				5872B3C1A2B0C1E3906F65D613F08624 /* delay_estimator_wrapper.h */,
+				5983E2AE6C99391BD7F7BD745FBCD5EF /* digital_agc.c */,
+				4A266A5CCCFCB32A032CF0F38BFDEA9C /* digital_agc.h */,
+				22A2ECBD37A42700D5C01D73205D6512 /* division_operations.c */,
+				E04B1F40D6CBA68D3BDA9400C56D46B9 /* dot_product_with_scale.c */,
+				3EAF06EFC476A634DD6CC2E85D1AAAE1 /* downsample_fast.c */,
+				55E0E2909FAB4390E0803DC953158D12 /* echo_cancellation.c */,
+				D8D5436AE2732497B20A2D6933525D70 /* echo_cancellation.h */,
+				0D370F43DB9EB00C7ACC54B7430CF3CB /* echo_cancellation_internal.h */,
+				2588F7C4B956670EBB4CCEB3782C3DDC /* energy.c */,
+				367F8435FC694FA0F7F32ED8C38A4148 /* fft4g.c */,
+				B4069FB59CE101CB925B525A4CBDCA4C /* fft4g.h */,
+				12C6B24CC70D6340233B895F48BF5D12 /* filter_audio.c */,
+				3B90095118B5AB3F927B887AAB6BD016 /* filter_audio.h */,
+				C627903D0D16EF001A3C5519DF354A5D /* filters.c */,
+				D48B4D485C7269C74F68B9DE9D5EF455 /* filters.h */,
+				491733CC78B8DE057675C7B266DA159D /* float_util.c */,
+				C4975934B26FDD68A65A8F3FC80E7EFE /* gain_control.h */,
+				E7026B5D2EBA2BCDAF8C2325EE458F4D /* get_scaling_square.c */,
+				E680EC109ECDEEFF1FAE174BB3A81263 /* high_pass_filter.c */,
+				14F5960D1ED71149DAF0E1B3018654A9 /* min_max_operations.c */,
+				7D3E76830D51BCBBBAB6351D997B4E81 /* mock_vad.h */,
+				DE05D1586C78027E4872B89B64A98D25 /* noise_suppression.c */,
+				10B04B756B5403539671099B1922D3B1 /* noise_suppression.h */,
+				882350AEF9F0785C06FD85DAEA86BA81 /* noise_suppression_x.c */,
+				A6F715F7F392FAA474A5471FB660D1D7 /* noise_suppression_x.h */,
+				43504CD668E06F781C87E9A31484675E /* ns_core.c */,
+				D0C5E38E5EB27D6D824FFF356DD710A3 /* ns_core.h */,
+				3E3DCEEA11B2D1D4260E12FCF9F51A77 /* nsx_core.c */,
+				E99B038DD6EE622781FE0AC5B11739E9 /* nsx_core.h */,
+				419D5C771A129C36A5192D253C3D61CA /* nsx_core_c.c */,
+				64B4880F6BA7F08078D5BECC3A2005AC /* nsx_defines.h */,
+				A16E6327FBC4A51C11ADA4BF9CE2543C /* randomization_functions.c */,
+				1B86F75B998C9F76F4B7B95413C920F1 /* real_fft.c */,
+				6AA547E47199BBBC753D3AB3D1929448 /* real_fft.h */,
+				4B2A4EEB98BCFF89DFB9FFD478AD2BF7 /* resample_48khz.c */,
+				ECD709734493A8E5B13A202B33CC24C8 /* resample_by_2.c */,
+				A5CFFD37C0E0932D23CB941F6AD42756 /* resample_by_2_internal.c */,
+				D7145B566D5B01EFED11DA6C6DEA4746 /* resample_by_2_internal.h */,
+				B0D1E87DCCC7363250E22226503EA1DE /* resample_fractional.c */,
+				0131A2EFF2BBD8931AB7A6FB10EA5E23 /* resample_sse.h */,
+				C1B353240663FE62AE2F6AD2971D949B /* ring_buffer.c */,
+				B58A54B053B07F405C458FBFC7F2C40F /* ring_buffer.h */,
+				937F94AA3EC4FC6461655C188A7561E7 /* signal_processing_library.h */,
+				3F208983C5E7BE51CC3FBEB6D2C14990 /* speex_resampler.c */,
+				A0C596C29ED52F30B5C4DBF6B8290322 /* speex_resampler.h */,
+				6A9FD4B8A7388999D207F4D8E7A3797D /* spl_init.c */,
+				B0549C250CAC5D647C7CF8BC385709BC /* spl_inl.h */,
+				54D5CFACB3472EFB2D263D519DEA8D19 /* spl_sqrt.c */,
+				8F05CB5181281AD95078DCD941F73B88 /* spl_sqrt_floor.c */,
+				624CE4A79C7C3D0A4366788B5DC516B6 /* splitting_filter.c */,
+				74BCE66221558C5A01492CB4720D3183 /* stack_alloc.h */,
+				8BB2D1032CC8AA6035445FFD490DE30A /* vad.h */,
+				19C927826B69BDA14B3B6EBF8016FEA7 /* vad_core.c */,
+				88F6DDD45801D9C8F8EA397C0C114554 /* vad_core.h */,
+				A810B0BD208549926AF1D587C6941C6A /* vad_filterbank.c */,
+				36015C10B0DC272AD0C85A4457F5C6B2 /* vad_filterbank.h */,
+				26E914850786D467B793B9A208B4D8F0 /* vad_gmm.c */,
+				5A0EB2992DF27502CAA788153761F46A /* vad_gmm.h */,
+				A71561651CAF0F6ACDF950B7C2235178 /* vad_sp.c */,
+				E7A29AC2D8E52AE5566EE0DE65028DF8 /* vad_sp.h */,
+				37C17420D8A16EA06F9FFC776370E7F6 /* vector_scaling_operations.c */,
+				BFAA5DF85B99015078E9DD03FBC806E5 /* webrtc_vad.c */,
+				4E853A1D693812B5CCE6267B3265944E /* webrtc_vad.h */,
+				F5CBF929F77166C3FA5151919CC263F1 /* windows_private.h */,
+				5A76F35BB08971A29932BACABED6892B /* Support Files */,
+			);
+			name = filter_audio;
+			path = filter_audio;
+			sourceTree = "<group>";
+		};
+		A233C2B698696321991BEFC76CEFAD76 /* Pods-SpokestackStarter */ = {
+			isa = PBXGroup;
+			children = (
+				502552544E93DC0A2F17F60DE0841254 /* Pods-SpokestackStarter.modulemap */,
+				6EF9AAB1CA1539D37BCEF62AE4E91291 /* Pods-SpokestackStarter-acknowledgements.markdown */,
+				A4927ABBAF2DE23305940CE10551781C /* Pods-SpokestackStarter-acknowledgements.plist */,
+				D0899BEA033004B9A93FD7B515CDC247 /* Pods-SpokestackStarter-dummy.m */,
+				DEE7DA568118B75B40E686C78750AAC5 /* Pods-SpokestackStarter-Info.plist */,
+				341CA129318194458825C17A92254569 /* Pods-SpokestackStarter-umbrella.h */,
+				BFB2E8354B838C1A0B5221A9FF2A350B /* Pods-SpokestackStarter.debug.xcconfig */,
+				A7EE2C5AC5A45C23222316630EB26D64 /* Pods-SpokestackStarter.release.xcconfig */,
+			);
+			name = "Pods-SpokestackStarter";
+			path = "Target Support Files/Pods-SpokestackStarter";
+			sourceTree = "<group>";
+		};
+		A3C5D80C6ACC87DCC736DFB4069A2819 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0E8F647D365EC18788D846D92683552 /* TensorFlowLiteC.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TensorFlowLiteC";
+			sourceTree = "<group>";
+		};
+		B1AF64565A4A5F0DA69A81EE1D6CC280 /* TensorFlowLiteSwift */ = {
+			isa = PBXGroup;
+			children = (
+				905585D6B3806496BACF180D745C2FA3 /* Interpreter.swift */,
+				4BB1711A4F8F74D61086B8CDA31A6148 /* InterpreterError.swift */,
+				C0ED143ACAE7900C83A5A91FBC6A80D2 /* InterpreterOptions.swift */,
+				229292FDFEBB83422732FC21B5329BB4 /* Model.swift */,
+				91EE999AF60BF8F12280246A5A25234D /* QuantizationParameters.swift */,
+				42CF171F70F30ECF52B7770C130C8F06 /* Tensor.swift */,
+				13C94F23522BF84B8823C87554EC8299 /* TensorFlowLite.swift */,
+				2C95DDC1FD53AEC8CE4B71FAD05AF6DE /* Support Files */,
+			);
+			name = TensorFlowLiteSwift;
+			path = TensorFlowLiteSwift;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				E93C8438792EBD4FD914D5F92B8B3E6B /* Pods */,
+				4506D1F3FBD41C9D6E92EE0763E6742D /* Products */,
+				502F06A74203FF01D4C981CF79EB0B31 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E93C8438792EBD4FD914D5F92B8B3E6B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				87A68C3BE5E89DA69A86C2428B2BC72E /* filter_audio */,
+				4E696A6CBF2C348E27DACF9BACBB407C /* Spokestack-iOS */,
+				12B6A08FD61341701C832A88B99DA136 /* TensorFlowLiteC */,
+				B1AF64565A4A5F0DA69A81EE1D6CC280 /* TensorFlowLiteSwift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F417E03CE4F92BAF29302E037085AC38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				900456815D068F1648913BAE06455639 /* TensorFlowLiteC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		584F5E7AE1B65978EF19643961F037A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03DF75CA524B168C0646F532E7A287CB /* TensorFlowLiteSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B351AFA1E0AFF4DFAC23E6E1A4535A0C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0B13048729DA97EE7F82BE1880F734F /* Spokestack-iOS-umbrella.h in Headers */,
+				BE35F80888CF05108707FA9B17A44302 /* Spokestack.h in Headers */,
+				E181C6A96C3F526FF9D52CBB8EA388C2 /* SpokeStackVAD.h in Headers */,
+				849EDBC804EAE3957D22DD7DB7841CC2 /* WITCvad.h in Headers */,
+				6944718DEE1F17C7AE082B5D671E6C5D /* WITVad.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5C12AE3FA2242A5DC2C64CEFCA4224D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				964A7A8AF5F98A4FF93B1931A912BC1D /* aec_common.h in Headers */,
+				E3FC8440BC3406EDE44879704BFEF599 /* aec_core.h in Headers */,
+				54C36A7AA710A6EDA6643C8ECB830D07 /* aec_core_internal.h in Headers */,
+				6238D84D297FD052057D8B0DA57E7A80 /* aec_rdft.h in Headers */,
+				2399E01B5797C6164D49F570285BB3A7 /* aec_resampler.h in Headers */,
+				001E0D3CC9CC0D2FB6D91066DC7E0FE6 /* analog_agc.h in Headers */,
+				8F4A77E3FE62933C88B5DA55750CDFCC /* arch.h in Headers */,
+				2A96869AB97E35A60CECBF6A20413F98 /* complex_fft_tables.h in Headers */,
+				0235C1DACAA01139FA9421C5C8E7524F /* defines.h in Headers */,
+				4129675EB8C3FEFDCD24C001AB717A78 /* delay_estimator.h in Headers */,
+				BD002C3D134E1E0B2B5E9B6ED9CFADF8 /* delay_estimator_internal.h in Headers */,
+				5FE465EF57CC7223487F1D601F073A3C /* delay_estimator_wrapper.h in Headers */,
+				E985FAB96E1A374D34A2A5EC74DAEF07 /* digital_agc.h in Headers */,
+				E0119261BFCA3D5470334D165B202790 /* echo_cancellation.h in Headers */,
+				41951F826E63C85F92521772CA45DB68 /* echo_cancellation_internal.h in Headers */,
+				A3DABA028E05CA3F662AADB43EA1F2F5 /* fft4g.h in Headers */,
+				C6BB61673C12D958057CDA2C59C6C0D8 /* filter_audio.h in Headers */,
+				82B4836846E9D986CA6EE72FCC6D6A73 /* filters.h in Headers */,
+				883E9EB2DE6E752DD99EE98E993CF995 /* gain_control.h in Headers */,
+				D222383008D44D75DB1B5F2D87EFBB41 /* mock_vad.h in Headers */,
+				AAE2BF0BC75C420726310743001C3213 /* noise_suppression.h in Headers */,
+				064D7AE9DB63E7060B0F5B303BD38EAA /* noise_suppression_x.h in Headers */,
+				7D30C5FA8B1AA8A2F61F6544DB79B931 /* ns_core.h in Headers */,
+				CC144AE2E9C6183963B169FE366E88F1 /* nsx_core.h in Headers */,
+				E4CB9EDAC85867772D3DE8A4ECF76A86 /* nsx_defines.h in Headers */,
+				AAFB1570A897F6AC7C866429C4FD0D22 /* real_fft.h in Headers */,
+				FAD7B8E8988CD101F08E0C69BE6E3F02 /* resample_by_2_internal.h in Headers */,
+				E925971D62789E7E1E3D552BB9BD9BDE /* resample_sse.h in Headers */,
+				13ADE9444E51947752323A904B84DE81 /* ring_buffer.h in Headers */,
+				59796D67A8B4FDCD47CFF80CFBD7841D /* signal_processing_library.h in Headers */,
+				CC8FFE44FD4A136B1CC2B3E54D7BA677 /* speex_resampler.h in Headers */,
+				BA991667442FB876A7C1F28F3CD7C0FC /* spl_inl.h in Headers */,
+				67896FCBE0071FB0B45EDD88DAA59D36 /* stack_alloc.h in Headers */,
+				EF76F8FC4EF0157FD9F3EDF0C0E3AFE9 /* vad.h in Headers */,
+				3E3E4AA83A6500CD0AF4F3D032E36F7E /* vad_core.h in Headers */,
+				49A00E29C84D50742407755DA50E16CC /* vad_filterbank.h in Headers */,
+				3E1653217AECAE877990ED265EFA56E6 /* vad_gmm.h in Headers */,
+				621F0A0859164D5432B07A760F931F27 /* vad_sp.h in Headers */,
+				4B436DECDB8E719FC585A3DC8FCC1689 /* webrtc_vad.h in Headers */,
+				08D99064B3F1AC2A294F630781C127FC /* windows_private.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D479B44C185BFE12E810408386F95D89 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58E784F962CCECB43F6318E57B2AE024 /* Pods-SpokestackStarter-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		10418167F619D6DA72BADAD10F9EC02B /* TensorFlowLiteSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43D72135E269AA64FA15C5AB43BE5270 /* Build configuration list for PBXNativeTarget "TensorFlowLiteSwift" */;
+			buildPhases = (
+				584F5E7AE1B65978EF19643961F037A5 /* Headers */,
+				6CA7BD1C5C209F53E7AE37811C7EBCBF /* Sources */,
+				ADE0248B57DAD3FB620A1FDACD74F19D /* Frameworks */,
+				2F02BF4708C542507209B080F1E2DD08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E194A4ECCEF102BD9D9B2B1F57E70D3 /* PBXTargetDependency */,
+			);
+			name = TensorFlowLiteSwift;
+			productName = TensorFlowLiteSwift;
+			productReference = E0B71FE13AA6B05010059EB4B8D87919 /* TensorFlowLite.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4A55A434B8988F7E3BA935733E7190AA /* filter_audio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50207F2AEF34A8F95E1CF3B87F46A50C /* Build configuration list for PBXNativeTarget "filter_audio" */;
+			buildPhases = (
+				B5C12AE3FA2242A5DC2C64CEFCA4224D /* Headers */,
+				2805122E5D965C46AA3389655EDCA9CC /* Sources */,
+				65B763530E97970C121FDBCBC8D8B904 /* Frameworks */,
+				C257376F9E1576D6ECB0D0455FA93482 /* Resources */,
+				7B16544F78DA0AE792EBF09608731F66 /* Copy aec Private Headers */,
+				0C0FE58A2B7CBB683A160A4370F0C7DC /* Copy aec/include Public Headers */,
+				E72080E17CA12E894926036D566A8CC4 /* Copy agc Private Headers */,
+				77312CE21DF5FD8DC8BC200451C3986E /* Copy . Public Headers */,
+				B04CC4B7C0E4F93CBE2057B9165BEA9E /* Copy ns Private Headers */,
+				888457C743AEE7E9335419CFE9378667 /* Copy ns/include Public Headers */,
+				59466F09C6E5B6DE08C4FD00C460E1C0 /* Copy other Private Headers */,
+				1930D932C00BB78AF6C1F5F3634CA264 /* Copy vad/include Public Headers */,
+				0B3282829C5F0C465F52E86D2452BE15 /* Copy zam Private Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = filter_audio;
+			productName = filter_audio;
+			productReference = 556BCFCFCB0804AF634B9CD5E3B1A8C3 /* filter_audio.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4B9348876BEF3F51C0E6EC469D14DFF4 /* Pods-SpokestackStarter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDBA5E139B12A8A9C5C724261823D7D1 /* Build configuration list for PBXNativeTarget "Pods-SpokestackStarter" */;
+			buildPhases = (
+				D479B44C185BFE12E810408386F95D89 /* Headers */,
+				F6F4C70C139A7135672468A99D3B6CE9 /* Sources */,
+				AA453B98389720C6EE16D32CDD996D1B /* Frameworks */,
+				633457A851C16DA7401BFEB5467749E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6485956A7F39C471BECCD7296973F62 /* PBXTargetDependency */,
+				4432EE6567130395F278D41DC2F3DFBF /* PBXTargetDependency */,
+				04C0E047B16D4FEF56A20234FD238BA2 /* PBXTargetDependency */,
+				0096B289EF4055589E35D8BAA19240B4 /* PBXTargetDependency */,
+			);
+			name = "Pods-SpokestackStarter";
+			productName = "Pods-SpokestackStarter";
+			productReference = DA27EAA122EF167337FD91B6BC5249F9 /* Pods_SpokestackStarter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		54116DE2A0501D52F51C7C36050C4A7B /* Spokestack-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 456FB5D0CA59F57B23062B46F23D5061 /* Build configuration list for PBXNativeTarget "Spokestack-iOS" */;
+			buildPhases = (
+				B351AFA1E0AFF4DFAC23E6E1A4535A0C /* Headers */,
+				BF03E6493459D9C2BA2C06AAE7F1F69E /* Sources */,
+				2A8029AB288C8EF4C190BEAD283DA6F5 /* Frameworks */,
+				377859B23A6A6981078733E8DEA48677 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BDECEC470B83EB1E186A6AE6FB5A6D4 /* PBXTargetDependency */,
+				FA7335D98B0DA0205909C61B10CA60B8 /* PBXTargetDependency */,
+			);
+			name = "Spokestack-iOS";
+			productName = "Spokestack-iOS";
+			productReference = 628A6BA4319DF086F8E68304E398AC22 /* Spokestack.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 4506D1F3FBD41C9D6E92EE0763E6742D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A55A434B8988F7E3BA935733E7190AA /* filter_audio */,
+				4B9348876BEF3F51C0E6EC469D14DFF4 /* Pods-SpokestackStarter */,
+				54116DE2A0501D52F51C7C36050C4A7B /* Spokestack-iOS */,
+				AC559E53E13B6FBEF4F5CC310A73AFE6 /* TensorFlowLiteC */,
+				10418167F619D6DA72BADAD10F9EC02B /* TensorFlowLiteSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F02BF4708C542507209B080F1E2DD08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		377859B23A6A6981078733E8DEA48677 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		633457A851C16DA7401BFEB5467749E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C257376F9E1576D6ECB0D0455FA93482 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2805122E5D965C46AA3389655EDCA9CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E269141B52A9D99D394AF569BCC71023 /* aec_core.c in Sources */,
+				04927A4F1EF98935A4A5B802E6517E37 /* aec_core_sse2.c in Sources */,
+				7E9F25792DB51A9CDF6F5368A9028273 /* aec_rdft.c in Sources */,
+				789E1482744115692A831172429B8101 /* aec_rdft_sse2.c in Sources */,
+				7F8D1245014D24EF6150E3069DBD5B2F /* aec_resampler.c in Sources */,
+				31A59D55E3D29A16A213FE7E8B528574 /* analog_agc.c in Sources */,
+				F49CC372E8983D6A8B73DFFB1003DE90 /* complex_bit_reverse.c in Sources */,
+				4EBFF7162E38625CAC6ECCCDF69ACD7C /* complex_fft.c in Sources */,
+				D313A2C9B671F0EE89CAC3946772BDF1 /* copy_set_operations.c in Sources */,
+				03D190675C7D6681FF4E51467F661FE4 /* cross_correlation.c in Sources */,
+				882EE25391A7C3187DDA606F5AA8D7D6 /* delay_estimator.c in Sources */,
+				570E1611BB5D43BCD550521DF2C5110A /* delay_estimator_wrapper.c in Sources */,
+				52D857EEB867EE69A40D81BF7A0AD772 /* digital_agc.c in Sources */,
+				9094B20A84726A9B6607AD56B833811E /* division_operations.c in Sources */,
+				3912C8D12618B8174BC00A9511FD0B1A /* dot_product_with_scale.c in Sources */,
+				B5D3B0AC1FF95E5A4F78598F073CAD26 /* downsample_fast.c in Sources */,
+				B5F18609DE510794A400E7386ECF6990 /* echo_cancellation.c in Sources */,
+				B5644A1CED9C5A4ACBA57112B824871A /* energy.c in Sources */,
+				AEC2F22203D57E63D4AC0492A2F14085 /* fft4g.c in Sources */,
+				F1C85F7D4753BB03CCB4F11656F11F3C /* filter_audio-dummy.m in Sources */,
+				222C05B1BDCF2F454A25C8259D30E2CD /* filter_audio.c in Sources */,
+				8181BE5FC97E17F8BB54996F8CBBF2EE /* filters.c in Sources */,
+				F6811BD9D53C40C4B7A143B8CE919217 /* float_util.c in Sources */,
+				BC324C81719F31071399371983F36512 /* get_scaling_square.c in Sources */,
+				D1A34CCC7C2E74101E9FC13E1A8BC435 /* high_pass_filter.c in Sources */,
+				C74A0878C3F88993C4FDF7EDDA4E6C42 /* min_max_operations.c in Sources */,
+				00CBB43A2F12EB3A0CCD2FC456F9AC66 /* noise_suppression.c in Sources */,
+				C0B37153C83C323DA5EB1245A0172ACC /* noise_suppression_x.c in Sources */,
+				BC101846E093FD85721B41C09C7E9E20 /* ns_core.c in Sources */,
+				D18528671957DE012C20443ADAE3C032 /* nsx_core.c in Sources */,
+				A6ED88B1A956223B27432E7F0F575070 /* nsx_core_c.c in Sources */,
+				9A4A0C27EC19AE40D62D9268FE210943 /* randomization_functions.c in Sources */,
+				B6F57646D91EDAB481DB5226F7662275 /* real_fft.c in Sources */,
+				73806BD443F9858E7CCC421F71A92993 /* resample_48khz.c in Sources */,
+				FC7E44EC408369F3682BE9D0D4B9AD7B /* resample_by_2.c in Sources */,
+				D8EE794794F6D02029C11B38E88E2295 /* resample_by_2_internal.c in Sources */,
+				DCC21C69B9D4078E9840D96B28CAF2CC /* resample_fractional.c in Sources */,
+				5AD7C0997BAC021698A6E36F3D14D174 /* ring_buffer.c in Sources */,
+				87878978BFD26450652A360648C71E88 /* speex_resampler.c in Sources */,
+				5D6E60E3C6260C6E426EE2DB213B53A6 /* spl_init.c in Sources */,
+				E482141EC212C86DE245C1EC44B5EC64 /* spl_sqrt.c in Sources */,
+				63C6B79F84CD8021DB1411C3C2BE9795 /* spl_sqrt_floor.c in Sources */,
+				4ED715EFC41135D1C9724F46CBCDC479 /* splitting_filter.c in Sources */,
+				5A34F4580178B622B6570EB6DA5EEA52 /* vad_core.c in Sources */,
+				F34CBBC61169FAD89FE7F849BC330FEE /* vad_filterbank.c in Sources */,
+				25D21C6D3F9F7DBA8C1ABD6A6D29BDA5 /* vad_gmm.c in Sources */,
+				E71613C83C3FF7E5A4B346CAEF11B198 /* vad_sp.c in Sources */,
+				436F11389FF2B9BE50924A49AA68267F /* vector_scaling_operations.c in Sources */,
+				6D005C5B17641E29B43C29724177BF80 /* webrtc_vad.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CA7BD1C5C209F53E7AE37811C7EBCBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9F91204104053DB22C1D01452DADE2D /* Interpreter.swift in Sources */,
+				EB202B9E5D5FA8A39DD478D74B7EBCF4 /* InterpreterError.swift in Sources */,
+				AAAD64CB5EDF341070080A2F414D4883 /* InterpreterOptions.swift in Sources */,
+				E873161E6F5CF54211246BE592B6589C /* Model.swift in Sources */,
+				DF6E49EE4FDEFC703681D603E5F95A80 /* QuantizationParameters.swift in Sources */,
+				1674C679F43142F5D813D24BA50E9C02 /* Tensor.swift in Sources */,
+				1A6A373A1FEC1F7989B58B73D7CB2518 /* TensorFlowLite.swift in Sources */,
+				D5FD240972A665BBA91ACD1064A24440 /* TensorFlowLiteSwift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF03E6493459D9C2BA2C06AAE7F1F69E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2C0FDAA973AB3A78B1BBF555F0732EC /* AppleSpeechRecognizer.swift in Sources */,
+				DF5BED181F454C0009E038D9E1317A2F /* AppleWakewordRecognizer.swift in Sources */,
+				8CA5B646502BBEC02DC625D9099AD279 /* AudioController.swift in Sources */,
+				395153A14748C956A8B04FDB8C4C08A4 /* AudioControllerDelegate.swift in Sources */,
+				9FA59109CBBD04358CEF2E6136D4B0C7 /* Data+Extensions.swift in Sources */,
+				D7BDB061A6BE0F6954741112C0A48A5F /* Error.swift in Sources */,
+				D9610D08129D49E23272286BBAB1E55E /* FFT.swift in Sources */,
+				169B7258E04520BDD076D8B79514FCBA /* PipelineDelegate.swift in Sources */,
+				2A6FEA9FFB21885C2C0F8951220CC53E /* Results.swift in Sources */,
+				7D1D0E1F65C743723655AFE79FA3445A /* RingBuffer.swift in Sources */,
+				51DE365F2F9ED1530307EA34BE8EC48E /* SignalProcessing.swift in Sources */,
+				C38339FD218227FE8C2676F1CC2D946F /* SpeechConfiguration.swift in Sources */,
+				567783388B7E38747CCA2C2BD8C079B3 /* SpeechContext.swift in Sources */,
+				39E10988BA77E7CB8E81BFE28B5789BE /* SpeechEventListener.swift in Sources */,
+				EB98B7796641D50025C57C31F788C9DF /* SpeechPipeline.swift in Sources */,
+				78A3DA96B266010279F38EB8BD376FBF /* SpeechProcessor.swift in Sources */,
+				221459967810648B417046024A0DF0AC /* SpeechProcessors.swift in Sources */,
+				016DB6598D7FA0A79EC9A019991F4EEB /* Spokestack-iOS-dummy.m in Sources */,
+				AE2B3F1A0EAB54F67564095E7A3674A8 /* TextToSpeech.swift in Sources */,
+				6EF652752E72E73125C2F585CF6DAEFB /* TextToSpeechDelegate.swift in Sources */,
+				309A9AE31D5D32D8DF08B2B9F829FD0A /* TextToSpeechInput.swift in Sources */,
+				45E898E99FF2D1D6E7E39C64FE4BFBE0 /* TextToSpeechResult.swift in Sources */,
+				2D3CC7657286BF26B2CE867698AFA9E4 /* TFLiteWakewordRecognizer.swift in Sources */,
+				DE6F20D69C2C374F07D0993C2704C8F7 /* Trace.swift in Sources */,
+				D65FBEE1C63B945ACE7800992DA07761 /* Typealiases.swift in Sources */,
+				D4141E65749DF97DB6CDBB36E61F0ADA /* VADDelegate.swift in Sources */,
+				E49C7C30FE7FC0D59E7F93CDB4172A6B /* WebRTCVAD.swift in Sources */,
+				B3EBA533D39034E94DFC807036648913 /* WITCvad.m in Sources */,
+				F223956D2169C357B8F672F06320E68B /* WITVad.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6F4C70C139A7135672468A99D3B6CE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A7AF25A62AA69537DCAC38C83780813 /* Pods-SpokestackStarter-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0096B289EF4055589E35D8BAA19240B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = filter_audio;
+			target = 4A55A434B8988F7E3BA935733E7190AA /* filter_audio */;
+			targetProxy = 55C4CB32246D82250878ABC2C86E74E3 /* PBXContainerItemProxy */;
+		};
+		04C0E047B16D4FEF56A20234FD238BA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TensorFlowLiteSwift;
+			target = 10418167F619D6DA72BADAD10F9EC02B /* TensorFlowLiteSwift */;
+			targetProxy = 1632B9DF5AA6A9DC9E59B1AD8662E070 /* PBXContainerItemProxy */;
+		};
+		1E194A4ECCEF102BD9D9B2B1F57E70D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TensorFlowLiteC;
+			target = AC559E53E13B6FBEF4F5CC310A73AFE6 /* TensorFlowLiteC */;
+			targetProxy = 4F0CC86E63C5389467BDAF367A3890C9 /* PBXContainerItemProxy */;
+		};
+		2BDECEC470B83EB1E186A6AE6FB5A6D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TensorFlowLiteSwift;
+			target = 10418167F619D6DA72BADAD10F9EC02B /* TensorFlowLiteSwift */;
+			targetProxy = 33F01BFDF121C55E4367E1B36C1CAF40 /* PBXContainerItemProxy */;
+		};
+		4432EE6567130395F278D41DC2F3DFBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TensorFlowLiteC;
+			target = AC559E53E13B6FBEF4F5CC310A73AFE6 /* TensorFlowLiteC */;
+			targetProxy = 2BC73A2F86916A61968A0936C3514B59 /* PBXContainerItemProxy */;
+		};
+		A6485956A7F39C471BECCD7296973F62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Spokestack-iOS";
+			target = 54116DE2A0501D52F51C7C36050C4A7B /* Spokestack-iOS */;
+			targetProxy = 42031458FF27B3F05C7CE4204D696202 /* PBXContainerItemProxy */;
+		};
+		FA7335D98B0DA0205909C61B10CA60B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = filter_audio;
+			target = 4A55A434B8988F7E3BA935733E7190AA /* filter_audio */;
+			targetProxy = C1E98F1AF797D5627451C627EAB86FD1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1422B121EAEAEA11307496903FA623C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		2934B748C8D331CAFC24FA2C6848AA18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0E8F647D365EC18788D846D92683552 /* TensorFlowLiteC.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52500055339A9A0E765807DE991697F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D3078B7BA87985C823141CFDD881171 /* TensorFlowLiteSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TensorFlowLiteSwift/TensorFlowLiteSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TensorFlowLiteSwift/TensorFlowLiteSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/TensorFlowLiteSwift/TensorFlowLiteSwift.modulemap";
+				PRODUCT_MODULE_NAME = TensorFlowLite;
+				PRODUCT_NAME = TensorFlowLite;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5505659C6D05163CB279C909C5933EB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA44CEBE0297E2BA25D694B2E93609F6 /* Spokestack-iOS.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Spokestack-iOS/Spokestack-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Spokestack-iOS/Spokestack-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Spokestack-iOS/Spokestack-iOS.modulemap";
+				PRODUCT_MODULE_NAME = Spokestack;
+				PRODUCT_NAME = Spokestack;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		60CE5A26EF498C5F80CA2137606740E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFB2E8354B838C1A0B5221A9FF2A350B /* Pods-SpokestackStarter.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SpokestackStarter/Pods-SpokestackStarter-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SpokestackStarter/Pods-SpokestackStarter.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8BC497417BD3F4FEF2B60F0B42A58AD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7EE2C5AC5A45C23222316630EB26D64 /* Pods-SpokestackStarter.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SpokestackStarter/Pods-SpokestackStarter-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SpokestackStarter/Pods-SpokestackStarter.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		924A38F2815FDEA16D13ED70FE6322AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 140D37F9E0DB7D7C2BC043CE8298E0F6 /* filter_audio.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/filter_audio/filter_audio-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/filter_audio/filter_audio-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/filter_audio/filter_audio.modulemap";
+				PRODUCT_MODULE_NAME = filter_audio;
+				PRODUCT_NAME = filter_audio;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A410811943B824A792A67E963A0DC125 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0E8F647D365EC18788D846D92683552 /* TensorFlowLiteC.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DACDC45213E98CD63EB7841E99EA4F7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 140D37F9E0DB7D7C2BC043CE8298E0F6 /* filter_audio.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/filter_audio/filter_audio-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/filter_audio/filter_audio-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/filter_audio/filter_audio.modulemap";
+				PRODUCT_MODULE_NAME = filter_audio;
+				PRODUCT_NAME = filter_audio;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E23A3587C7493D3AD0BB97545BBC850C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D3078B7BA87985C823141CFDD881171 /* TensorFlowLiteSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TensorFlowLiteSwift/TensorFlowLiteSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TensorFlowLiteSwift/TensorFlowLiteSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/TensorFlowLiteSwift/TensorFlowLiteSwift.modulemap";
+				PRODUCT_MODULE_NAME = TensorFlowLite;
+				PRODUCT_NAME = TensorFlowLite;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ED7888FA6713EABBF66D26A8003AD1CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F0254C96EFE0AD9AA2C790A50F82F13F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA44CEBE0297E2BA25D694B2E93609F6 /* Spokestack-iOS.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Spokestack-iOS/Spokestack-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Spokestack-iOS/Spokestack-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Spokestack-iOS/Spokestack-iOS.modulemap";
+				PRODUCT_MODULE_NAME = Spokestack;
+				PRODUCT_NAME = Spokestack;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43D72135E269AA64FA15C5AB43BE5270 /* Build configuration list for PBXNativeTarget "TensorFlowLiteSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52500055339A9A0E765807DE991697F4 /* Debug */,
+				E23A3587C7493D3AD0BB97545BBC850C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		456FB5D0CA59F57B23062B46F23D5061 /* Build configuration list for PBXNativeTarget "Spokestack-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0254C96EFE0AD9AA2C790A50F82F13F /* Debug */,
+				5505659C6D05163CB279C909C5933EB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED7888FA6713EABBF66D26A8003AD1CA /* Debug */,
+				1422B121EAEAEA11307496903FA623C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50207F2AEF34A8F95E1CF3B87F46A50C /* Build configuration list for PBXNativeTarget "filter_audio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DACDC45213E98CD63EB7841E99EA4F7B /* Debug */,
+				924A38F2815FDEA16D13ED70FE6322AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDBA5E139B12A8A9C5C724261823D7D1 /* Build configuration list for PBXNativeTarget "Pods-SpokestackStarter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60CE5A26EF498C5F80CA2137606740E9 /* Debug */,
+				8BC497417BD3F4FEF2B60F0B42A58AD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4A93F0DD0F148C4232C2AB76290AC7A /* Build configuration list for PBXAggregateTarget "TensorFlowLiteC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A410811943B824A792A67E963A0DC125 /* Debug */,
+				2934B748C8D331CAFC24FA2C6848AA18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
